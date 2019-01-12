@@ -1,2 +1,2 @@
 # WDD331-Group-3
-WDD331 Group 3 - Advanced CSS
+Winter 2019 WDD331 Group 3 - Advanced CSS
