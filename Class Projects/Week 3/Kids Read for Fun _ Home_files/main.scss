@@ -1,0 +1,80 @@
+@import "reset";
+@import "setup";
+
+
+// Lora Font
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*                                            ELEMENTS                                           */
+/* --------------------------------------------------------------------------------------------- */
+
+@include links($link-color,$link-color,$link-active);
+
+body {
+    font-size: main-font-size;
+    font-family: $main-font;
+}
+
+h1, h2, h3 {
+    color: $back-color;
+    font-family: $headings; 
+    font-size: $headings-font-size;
+}
+
+header {
+    @include header;
+    background-color: $link-color; 
+    text-align: right;
+    display: block;
+    @include links($back-color,$article-light,$link-active);
+}
+
+li {
+    list-style-type: none;
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: $back-color;
+    position: relative;
+    @include margins(230px,auto,20px);
+    
+    img {
+        @include margins(auto,auto);
+        width: 200px;
+        height: auto;
+        display: block;
+        padding-bottom: 15px;
+    }
+}
+
+article {
+    background-color: $article-light;
+    box-shadow: .15rem .15rem .15rem #d7d7d7;
+    @include margins(40px,40px,40px,40px,40px);
+    
+    section { margin-top: -15px;}
+    
+    h2 { 
+        margin-bottom: 65px;
+        @include links(#000, $link-color, $link-color);
+    }
+}
+
+// CLASS SELECTORS
+// ------------------------------------------------
+
+.post-date {
+    padding-bottom: 20px;
+    color: #777;
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+/*                                   Media Screen Sizes                                          */
+/* --------------------------------------------------------------------------------------------- */
+
+@import "media";

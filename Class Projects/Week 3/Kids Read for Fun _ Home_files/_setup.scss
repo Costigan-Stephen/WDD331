@@ -1,0 +1,39 @@
+// VARIABLES 
+// ------------------------------------------------
+
+// Font
+$main-font: 'Helvetica', Arial, sans-serif;
+$main-font-size: 16px;
+$headings: 'Lora', serif;
+$headings-font-size: 28px;
+
+// Colors
+$back-color: #FAEBD7;
+$link-color: #6495ED; // Also used for header
+$link-active: #DEB887;
+$article-light: #FFF;
+
+// MIXINS
+// ------------------------------------------------
+
+@mixin links($visited,$hover,$active) {
+    a { 
+        text-decoration: none; 
+        &:visited { color: $visited ; }
+        &:hover{ color: $hover ; text-decoration: underline; }
+        &:active{ color: $active; } 
+    }
+}
+
+@mixin margins($left: auto,$right: auto,$padding:inherit, $up: auto, $down: auto){
+    margin: $up $right $down $left;
+    padding: $padding;
+}
+
+@mixin header($height: 100%,$width: 150px,$pos: fixed,$float: left,$pad: 40px) {
+    height: $height;
+    width: $width;
+    position: $pos;
+    float: $float;
+    padding: $pad;
+}
