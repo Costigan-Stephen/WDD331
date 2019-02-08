@@ -48,64 +48,6 @@ p {
 
 /* -------------------------------- 
 
-xNavigation 
-
--------------------------------- */
-header {
-  background-color: #5f0538; }
-
-.cd-logo {
-  /* logo box style */
-  background-color: #460942;
-  width: 120px; }
-  @media only screen and (min-width: 1024px) {
-    .cd-logo {
-      width: 180px; } }
-
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #5f0538; }
-  .cd-main-nav li a {
-    color: #ff6f01;
-    border-color: #770646; }
-  @media only screen and (min-width: 1024px) {
-    .cd-main-nav li a {
-      color: #f53ba4; }
-      .cd-main-nav li a.selected {
-        color: #ff6f01;
-        box-shadow: 0 2px 0 #460942; }
-      .no-touch .cd-main-nav li a:hover {
-        color: #ff6f01; } }
-
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #ff6f01; }
-  .cd-nav-trigger span::before, .cd-nav-trigger span::after {
-    /* upper and lower lines */
-    background-color: #ff6f01; }
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 111, 1, 0); }
-  .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-    /* preserve visibility of upper and lower lines - close icon */
-    background-color: #ff6f01; }
-
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #8f0855; }
-  .no-touch .cd-download:hover {
-    background-color: #a80963; }
-  .cd-download span {
-    /* tooltip */
-    background: #460942;
-    color: #ff6f01; }
-    .cd-download span::before {
-      /* right arrow color */
-      border-color: #460942; }
-
-/* -------------------------------- 
-
 xForm 
 
 -------------------------------- */
@@ -269,6 +211,108 @@ xButtons
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
   color: #460942; }
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+header {
+  background-color: #5f0538; }
+
+.cd-logo {
+  /* logo box style */
+  background-color: #460942;
+  width: 120px; }
+  @media only screen and (min-width: 1024px) {
+    .cd-logo {
+      width: 180px; } }
+
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #5f0538; }
+  .cd-main-nav li a {
+    color: #ff6f01;
+    border-color: #770646; }
+  @media only screen and (min-width: 1024px) {
+    .cd-main-nav li a {
+      color: #f53ba4; }
+      .cd-main-nav li a.selected {
+        color: #ff6f01;
+        box-shadow: 0 2px 0 #460942; }
+      .no-touch .cd-main-nav li a:hover {
+        color: #ff6f01; } }
+
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #ff6f01; }
+  .cd-nav-trigger span::before, .cd-nav-trigger span::after {
+    /* upper and lower lines */
+    background-color: #ff6f01; }
+
+.cd-primary-nav ul,
+.cd-secondary-nav ul,
+.cd-other-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 0.5%;
+  margin: 20px 0; }
+
+.cd-primary-nav ul li a {
+  text-align: center;
+  padding: 0 45px;
+  color: #ff6f01;
+  background-color: #460942;
+  border-radius: 5px;
+  font-family: "Rock Salt", serif;
+  font-size: 2.4rem; }
+.cd-primary-nav ul li a:hover {
+  background-color: #811d5e;
+  color: #fed800; }
+
+.cd-secondary-nav ul li a {
+  text-align: center;
+  padding: 10px 58px;
+  color: black;
+  border: 0.05em solid black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem; }
+.cd-secondary-nav ul li a:hover {
+  background-color: black;
+  opacity: 0.5;
+  color: white; }
+
+.cd-other-nav ul li a {
+  text-align: center;
+  padding: 5px 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem; }
+.cd-other-nav ul li a:hover {
+  color: black;
+  text-shadow: 2px 2px 5px black; }
+
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(255, 111, 1, 0); }
+  .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+    /* preserve visibility of upper and lower lines - close icon */
+    background-color: #ff6f01; }
+
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #8f0855; }
+  .no-touch .cd-download:hover {
+    background-color: #a80963; }
+  .cd-download span {
+    /* tooltip */
+    background: #460942;
+    color: #ff6f01; }
+    .cd-download span::before {
+      /* right arrow color */
+      border-color: #460942; }
 
 /* -------------------------------- 
 

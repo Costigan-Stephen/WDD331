@@ -6,6 +6,13 @@
 $primary-font: 'Lato', sans-serif;
 $secondary-font: 'Rock Salt', serif;
 
+//Sizes
+$h1-mqs: 3.2rem;
+$h1-mqm: 3rem;
+$h1: 2.4rem;
+$h2: 1.8rem;
+$p: 1.4rem;
+$p-mqs: 1.6rem;
 
 /* -------------------------------- 
 
@@ -19,17 +26,17 @@ h1, h2 {
 }
 
 h1 {
-	font-size: 2.4rem;
+	font-size: $h1;
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 .4em;
 
 	@include MQ(S) {
-		font-size: 3.2rem;
+		font-size: $h1-mqs;
 	}
 
 	@include MQ(M) {
-		font-size: 3rem;
+		font-size: $h1-mqm;
 	}
 }
 
@@ -39,7 +46,7 @@ h2 {
 	margin: 1em 0;
 
 	@include MQ(S) {
-		font-size: 1.8rem;
+		font-size: $h2;
 		margin: 1em 0 1.4em;
 	}
 }
@@ -50,7 +57,7 @@ section > h2::before {
 }
 
 p {
-	font-size: 1.4rem;
+	font-size: $p;
 	line-height: 1.4;
 	color: lighten($color-2, 25%);
 
@@ -60,7 +67,7 @@ p {
 	}
 
 	@include MQ(S) {
-		font-size: 1.6rem;
+		font-size: $p-mqs;
 		line-height: 1.6;
 	}
 }
