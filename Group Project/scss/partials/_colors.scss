@@ -7,10 +7,13 @@ $color-4: #fd2f24; // Red
 $color-5: #ff6f01; // Orange
 $color-6: #fed800; // Yellow
 
+// White and Black made in variable form in case these colors are to be changed in future
+$black: black; 
+$white: white; 
+
 
 // additional colors
 
 $success: #6fce72; // green
 $alert: $color-3;  // red
-$black: #fff; 
-$white: #000; 
+$background: $white; //To change as sun sets

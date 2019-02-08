@@ -515,6 +515,42 @@ section {
 			background: darken($color-5, 5%);
 		}
 	}
+    
+    li:nth-of-type(6) .cd-color-swatch {
+		background: $color-6;
+
+		&::before {
+			background: lighten($color-6, 5%);
+		}
+
+		&::after {
+			background: darken($color-6, 5%);
+		}
+	}
+    
+    li:nth-of-type(7) .cd-color-swatch {
+		background: $white;
+
+		&::before {
+			background: lighten($white, 5%);
+		}
+
+		&::after {
+			background: darken($white, 5%);
+		}
+	}
+    
+    li:nth-of-type(8) .cd-color-swatch {
+		background: $black;
+
+		&::before {
+			background: lighten($black, 5%);
+		}
+
+		&::after {
+			background: darken($black, 5%);
+		}
+	}
 
 	@include MQ(S) {
 		li {
@@ -525,7 +561,7 @@ section {
 				margin-right: 1.25%;
 			}
 
-			&:nth-of-type(5n) {
+			&:nth-of-type(8n) {
 				margin-right: 0;
 			}
 		}
