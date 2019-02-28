@@ -1,0 +1,118 @@
+
+html{
+    display: grid;
+}
+
+body {
+    grid-row-gap: 1.2vw;
+    grid-auto-flow: column;
+}
+    
+header{
+    padding: 0 $padding-mobile;    
+
+    h1, h2{
+        text-align: center;
+    }
+   
+    h2 {
+        margin-bottom: 0px;
+    }
+}
+
+.intro header, .intro .summary {
+    text-align: center;
+    background-color: $background-header;
+    padding: 0 $padding-mobile;
+    
+    p:first-of-type {
+        margin-top: 0px;
+        padding-top: 10px;   
+    }
+}
+
+.main > div, .preamble, aside {
+    border: 1px solid black;
+    margin: 2vw;
+    padding: 0 $padding-mobile 20px $padding-mobile;
+    background-color: $background-article;
+    
+}
+
+aside {
+    top: 13px;
+    background-color: $background-aside;
+    box-shadow: 3px 3px 3px gray;
+    padding: $padding-mobile;
+}
+
+footer{
+    border: 1px solid black;
+    margin: 2vw;
+    padding: $padding-mobile;
+    text-align: center;
+    grid-area: foot;
+}
+
+@media (min-width: 700px) {
+    
+    body{
+        width: $body-width;
+        grid-template-areas:
+          "top top top" 
+          "left left right" 
+          "foot foot foot";
+        grid-template-rows: 20% 60% 20%;
+        grid-template-columns: 33vw 33vw 33vw; 
+    }
+    
+    .intro header, .intro .summary {
+        width: 82%;
+
+        padding-left: 70%;
+        
+        h1, h2{
+            text-align: right;
+        }
+        
+        p:first-of-type {
+            margin-top: 0px;
+            padding-top: 20px;  
+            padding-left: 60%;
+        }
+    }
+    
+    .main > div, .preamble, aside {
+        display: grid;
+    }
+    
+    .intro header, .intro .summary {
+        text-align: right;
+        
+    }
+    
+    .main > :nth-child(2), .preamble {
+        padding-right: 50%;
+        grid-area: left;
+    }
+    
+    .main > :nth-child(odd) {
+        padding-left: 50%;
+        grid-area: left;
+    }
+    
+     aside {
+         position: absolute;
+         grid-area: right;
+         left: $body-width;
+         top: $aside-top;
+         width: 27%;
+         height: 100%;
+         
+    }
+    
+    footer{
+        grid-area: foot;
+        width: 95%;
+    }
+}
