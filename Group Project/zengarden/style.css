@@ -5,63 +5,69 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* Layout */
-html {
-  display: grid; }
+@media (max-width: 700px) {
+  html {
+    display: grid; }
 
-body {
-  grid-row-gap: 1.2vw; }
+  body {
+    grid-row-gap: 1.2vw; }
 
-header {
-  padding: 0 2vw; }
-  header h1, header h2 {
-    text-align: center; }
-  header h2 {
-    margin-bottom: 0px; }
+  header {
+    padding: 0 2vw; }
+    header h1, header h2 {
+      text-align: center; }
+    header h2 {
+      margin-bottom: 0px; }
 
-.intro header, .intro .summary {
-  text-align: center;
-  background-color: aqua;
-  padding: 0 2vw; }
-  .intro header p:first-of-type, .intro .summary p:first-of-type {
-    margin-top: 0px;
-    padding-top: 10px; }
+  .intro header, .intro .summary {
+    text-align: center;
+    background-color: aqua;
+    padding: 0 2vw; }
+    .intro header p:first-of-type, .intro .summary p:first-of-type {
+      margin-top: 0px;
+      padding-top: 10px; }
 
-.main > div, .preamble, aside {
-  border: 1px solid black;
-  margin: 2vw;
-  padding: 0 2vw 20px 2vw;
-  background-color: white; }
+  .main > div, .preamble, aside {
+    border: 1px solid black;
+    margin: 2vw;
+    padding: 0 2vw 20px 2vw;
+    background-color: white; }
 
-aside {
-  top: 13px;
-  background-color: white;
-  box-shadow: 3px 3px 3px gray;
-  padding: 2vw; }
+  aside {
+    top: 13px;
+    background-color: white;
+    box-shadow: 3px 3px 3px gray;
+    padding: 2vw; }
 
-footer {
-  border: 1px solid black;
-  margin: 2vw;
-  padding: 2vw;
-  text-align: center;
-  grid-area: foot; }
-
+  footer {
+    border: 1px solid black;
+    margin: 2vw;
+    background-color: #999;
+    padding: 2vw;
+    text-align: center;
+    grid-area: foot; } }
 @media (min-width: 700px) {
   html {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 100%; }
+    margin: 0;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin-bottom: 2.5vw; }
+
+  .main > div, .preamble, aside {
+    border: 1px solid black;
+    padding: 20px; }
 
   .page-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "topa topa" "bodya side"; }
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side"  "bodya bodya side"  "bodya bodya ." "bodya bodya ."; }
 
   #zen-supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: ". one side" "two . side"  ". three ."  "four . ." "foota foota foota";
+    grid-template-areas: ". one" "two ."  ". three"  "four ." "foota foota";
     grid-area: bodya; }
 
   #zen-intro {
@@ -69,7 +75,8 @@ footer {
 
   .intro header,
   .intro .summary {
-    padding: 1vw 2.5vw; }
+    background-color: aqua;
+    padding: 0.5vw 2.5vw; }
     .intro header h1,
     .intro header h2,
     .intro .summary h1,
@@ -106,7 +113,14 @@ footer {
     grid-area: side; }
 
   footer {
-    grid-area: foota; } }
+    padding: 0.5vw 2.5vw;
+    background: #999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center; } }
 /* basic elements 
 html {
     margin: 0;
