@@ -1,0 +1,87 @@
+ html {
+     margin-top: 0px;
+     margin-left: 0px;
+     width: $body-width;
+ }
+
+ .page-wrapper {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-template-rows: auto auto;
+     grid-template-areas: 
+         "topa topa" 
+         "bodya side";
+ }
+
+ #zen-supporting {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas: 
+         ". one side" 
+         "two . side" 
+         ". three ." 
+         "four . ."
+         "foota foota foota";
+     grid-area: bodya;
+ }
+
+#zen-intro{
+    grid-area: topa;
+}
+
+ .intro header,
+ .intro .summary {
+     
+     padding: $padding-full $padding-full-sides;
+     h1,
+     h2 {
+         text-align: right;
+     }
+
+     p:first-of-type {
+         padding-top: 0px;
+     }
+ }
+
+ .preamble {
+
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: one;
+     grid-area: bodya;
+ }
+
+ .main > div,
+ .preamble,
+ aside {}
+
+ .intro header,
+ .intro .summary {
+     text-align: right;
+ }
+
+ .main > :nth-child(1),
+ .preamble {
+     grid-area: one;
+ }
+
+ .main > :nth-child(2),
+ .preamble {
+     grid-area: two;
+ }
+
+ .main > :nth-child(3) {
+     grid-area: three;
+ }
+
+ .main > :nth-child(4) {
+     grid-area: four;
+ }
+
+ aside {
+     grid-area: side;
+ }
+
+ footer {
+     grid-area: foota;
+ }
