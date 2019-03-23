@@ -26,6 +26,7 @@
     .intro header p:first-of-type, .intro .summary p:first-of-type {
       margin-top: 0px;
       padding-top: 10px; }
+    
 
   .main > div, .preamble, aside {
     border: 1px solid black;
@@ -45,7 +46,12 @@
     background-color: #041105;
     padding: 2vw;
     text-align: center;
-    grid-area: foot; } }
+    grid-area: foot; } 
+
+    .extra1{
+        
+    }
+}
 @media (min-width: 700px) {
   html {
     background-color: #142816;
@@ -132,7 +138,11 @@
       text-decoration: none;
       color: #63a56a;
       padding: 0 10px;
-      text-transform: uppercase; } }
+      text-transform: uppercase; } 
+    .extra1{
+        background: url(../assets/palmTree.svg);
+    }
+}
 /* basic elements 
 html {
     margin: 0;
