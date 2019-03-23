@@ -1,0 +1,34 @@
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #460942; // Dark Purple
+$color-2: #5f0538; // Purple
+$color-3: #811d5e; // Light Purple
+$color-4: #fd2f24; // Red
+$color-5: #ff6f01; // Orange
+$color-6: #fed800; // Yellow
+
+// Main Body
+$color-7: #142816; // Dark Green (background behind grass)
+$color-8: #63a56a; // Light Green (text)
+
+// others
+$footer: #041105;
+
+// White and Black made in variable form in case these colors are to be changed in future
+$black: black;
+$white: white;
+
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3;  // red
+
+//To change as sun sets?
+$background: $white;
+$alternate: $black;
+
+$banner: $color-1;
+$background-aside: $background;
+$background-header: $color-1;
+$background-article: $background;
