@@ -1,0 +1,121 @@
+ html {
+   background-color: $color-7;
+   color: $color-8;
+   margin: 0;
+   width: $body-width;
+   min-height: calc(100vh - 70px);
+   margin-bottom: $padding-full-sides*1.4;
+ }
+
+a{
+  text-decoration: underline;
+  color: inherit;
+}
+
+
+.main > div, .preamble, aside {
+    // border: 1px solid black;
+    padding: 20px;
+}
+
+ .page-wrapper {
+
+     display: grid;
+     grid-template-columns: 2fr 2fr 1fr;
+     grid-template-rows: auto;
+     grid-template-areas:
+         "topa topa topa"
+         "bodya bodya side"
+         "bodya bodya side"
+         "bodya bodya side"
+         "bodya bodya ."
+         "bodya bodya .";
+ }
+
+ #zen-supporting {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto auto auto;
+     grid-template-areas:
+         ". one"
+         "two ."
+         ". three"
+         "four ."
+         "foota foota";
+     grid-area: bodya;
+ }
+
+#zen-intro{
+    grid-area: topa;
+}
+
+ .intro header,
+ .intro .summary {
+     background-color: $banner;
+     padding: $padding-full $padding-full-sides;
+     h1,
+     h2 {
+         text-align: right;
+     }
+
+     p:first-of-type {
+         padding-top: 0px;
+     }
+ }
+
+ .preamble {
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: one;
+     grid-area: bodya;
+ }
+
+ .main > div,
+ .preamble,
+ aside {}
+
+ .intro header,
+ .intro .summary {
+     text-align: right;
+ }
+
+ .main > :nth-child(1),
+ .preamble {
+     grid-area: one;
+ }
+
+ .main > :nth-child(2),
+ .preamble {
+     grid-area: two;
+ }
+
+ .main > :nth-child(3) {
+     grid-area: three;
+ }
+
+ .main > :nth-child(4) {
+     grid-area: four;
+ }
+
+ aside {
+   background-color: $footer;
+   opacity: 0.7;
+   grid-area: side;
+ }
+
+ footer {
+    padding: $padding-full $padding-full-sides;
+    background: $footer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    // border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    a{
+      text-decoration: none;
+      color: $color-8;
+      padding: 0 10px;
+      text-transform: uppercase;
+    }
+ }

@@ -1,3 +1,4 @@
+/*** uncss> filename: style.css ***/
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* This file based on 'Tranquille' by Dave Shea */
@@ -5,19 +6,6 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* Layout */
-/* FONTS */
-section {
-  min-height: 800px;
-  background-color: #811d5e;
-  background-image: linear-gradient(#460942, #5f0538, #811d5e, #fd2f24, #ff6f01);
-  color: white; }
-
-.preamble {
-  background: url("./assets/palmTreeLeft.svg");
-  height: auto;
-  padding-bottom: 30px;
-  margin-left: -20px; }
-
 @media (max-width: 700px) {
   html {
     display: grid; }
@@ -34,8 +22,9 @@ section {
 
   .intro header, .intro .summary {
     text-align: center;
+    background-color: #460942;
     padding: 0 2vw; }
-    .intro header p:first-of-type, .intro .summary p:first-of-type {
+    .intro .summary p:first-of-type {
       margin-top: 0px;
       padding-top: 10px; }
 
@@ -92,13 +81,11 @@ section {
 
   .intro header,
   .intro .summary {
+    background-color: #460942;
     padding: 0.5vw 2.5vw; }
     .intro header h1,
-    .intro header h2,
-    .intro .summary h1,
-    .intro .summary h2 {
+    .intro header h2 {
       text-align: right; }
-    .intro header p:first-of-type,
     .intro .summary p:first-of-type {
       padding-top: 0px; }
 
@@ -131,7 +118,6 @@ section {
     grid-area: side; }
 
   footer {
-    z-index: 1;
     padding: 0.5vw 2.5vw;
     background: #041105;
     position: fixed;
@@ -322,26 +308,8 @@ aside ul {
 .wrapper li {
   margin-bottom: 15px; }
 
-header h1 {
-  font-family: "Rock Salt", serif;
-  font-size: 2.5vw;
-  margin-bottom: 0px; }
-
-header h2 {
-  font-family: "Lato", sans-serif; }
-
-h3 {
-  font-family: "Rock Salt", serif;
-  letter-spacing: .3em; }
-
-p, a {
-  font-family: "Lato", sans-serif; }
-
-.preamble {
-  padding-top: 150px;
-  padding-right: 66%; }
-
-.summary {
-  padding-left: 66% !important; }
+.intro {
+  background-color: #460942; }
 
 /*# sourceMappingURL=style.css.map */
+
