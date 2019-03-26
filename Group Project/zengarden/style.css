@@ -10,10 +10,12 @@
   html {
     display: grid;
   }
+    
 
   body {
     grid-row-gap: 1.2vw;
   }
+
 
   header {
     padding: 0 2vw;
@@ -33,6 +35,7 @@
     margin-top: 0px;
     padding-top: 10px;
   }
+
 
   .main > div, .preamble, aside {
     border: 1px solid black;
@@ -64,6 +67,7 @@
     min-height: calc(100vh - 70px);
     margin-bottom: 2.5vw;
   }
+
 
   .main > div, .preamble, aside {
     border: 1px solid black;
@@ -103,13 +107,7 @@
 .intro .summary p:first-of-type {
     padding-top: 0px;
   }
-
-  .preamble {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: one;
-    grid-area: bodya;
-  }
-
+    
   .intro header,
 .intro .summary {
     text-align: right;
@@ -328,11 +326,20 @@ aside ul {
   margin-bottom: 15px;
 }
 
+.preamble{
+    background: url("../assets/palmTreeLeft.svg");
+    height:auto;
+    padding-bottom: 30px;
+        
+        margin-left: -20px;
+}
+
 section {
   min-height: 800px;
   background-color: #811d5e;
   background-image: linear-gradient(#460942, #5f0538, #811d5e, #fd2f24, #ff6f01);
   color: white;
+
 }
 
 header h1 {
