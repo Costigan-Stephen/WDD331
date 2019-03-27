@@ -1,24 +1,33 @@
  html {
-     margin: 0;
-     width: $body-width;
-     min-height: calc(100vh - 70px);
-     margin-bottom: $padding-full-sides;
+   background-color: $color-7;
+   color: $color-8;
+   margin: 0;
+   width: $body-width;
+   min-height: calc(100vh - 70px);
+   margin-bottom: $padding-full-sides*1.4;
  }
 
+a{
+  text-decoration: underline;
+  color: inherit;
+}
+
+
 .main > div, .preamble, aside {
-    border: 1px solid black;
+    // border: 1px solid black;
     padding: 20px;
 }
 
  .page-wrapper {
+
      display: grid;
      grid-template-columns: 2fr 2fr 1fr;
      grid-template-rows: auto;
-     grid-template-areas: 
+     grid-template-areas:
          "topa topa topa"
-         "bodya bodya side" 
-         "bodya bodya side" 
-         "bodya bodya side" 
+         "bodya bodya side"
+         "bodya bodya side"
+         "bodya bodya side"
          "bodya bodya ."
          "bodya bodya .";
  }
@@ -27,10 +36,10 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-rows: auto auto auto auto;
-     grid-template-areas: 
-         ". one" 
-         "two ." 
-         ". three" 
+     grid-template-areas:
+         ". one"
+         "two ."
+         ". three"
          "four ."
          "foota foota";
      grid-area: bodya;
@@ -42,7 +51,11 @@
 
  .intro header,
  .intro .summary {
+<<<<<<< HEAD
 
+=======
+     background-color: $banner;
+>>>>>>> 2e600ed882075ff56c288da449a01d18dc8c17e1
      padding: $padding-full $padding-full-sides;
      h1,
      h2 {
@@ -55,7 +68,6 @@
  }
 
  .preamble {
-
      grid-template-columns: 1fr 1fr;
      grid-template-areas: one;
      grid-area: bodya;
@@ -89,7 +101,9 @@
  }
 
  aside {
-     grid-area: side;
+   background-color: $footer;
+   opacity: 0.7;
+   grid-area: side;
  }
 
  footer {
@@ -99,6 +113,13 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    border: 1px solid black;
+    // border: 1px solid black;
     text-align: center;
+    padding: 20px;
+    a{
+      text-decoration: none;
+      color: $color-8;
+      padding: 0 10px;
+      text-transform: uppercase;
+    }
  }
