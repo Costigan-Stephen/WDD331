@@ -10,13 +10,16 @@ section {
   min-height: 800px;
   background-color: #811d5e;
   background-image: linear-gradient(#460942, #5f0538, #811d5e, #fd2f24, #ff6f01);
-  color: white; }
+  color: white;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px; }
 
 .preamble {
   background: url("./assets/palmTreeLeft.svg");
   height: auto;
-  padding-bottom: 30px;
-  margin-left: -20px; }
+  padding-left: 20px;
+  padding-bottom: 30px; }
 
 @media (max-width: 700px) {
   html {
