@@ -326,27 +326,12 @@ aside ul {
   margin-bottom: 15px;
 }
 
-.extra1{
-    content:url("../assets/treeLeft.svg");
-    width:600px;
+.preamble{
+    background:url("../assets/palmTreeLeft.svg");
     height:auto;
-    padding-bottom: 300px;
-    margin-top:-8000px;
-    margin-right: 312px;
-    position: absolute;
-    bottom:0;
-    left:0;
-}
-
-.extra2{
-    transform: rotateY(180deg);
-        content:url("../assets/treeLeft.svg");
-    width:300px;
-    height:auto;
-    padding-bottom: 200px;
-    position: absolute;
-    bottom:0;
-    right:0;
+    padding-bottom: 30px;
+        
+        margin-left: -20px;
 }
 
 section {
