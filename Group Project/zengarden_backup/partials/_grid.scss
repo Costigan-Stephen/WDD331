@@ -1,0 +1,15 @@
+
+
+
+@media (max-width: 700px) {
+    
+    @import 'small';
+   
+}
+
+@media (min-width: 700px) {
+    
+    @import 'large';
+   
+}
+

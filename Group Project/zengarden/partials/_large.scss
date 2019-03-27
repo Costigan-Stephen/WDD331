@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  html {
    background-color: $color-7;
    color: $color-8;
@@ -44,11 +45,29 @@ a{
          "foota foota";
      grid-area: bodya;
  }
-
-#zen-intro{
-    grid-area: topa;
+=======
+html {
+  background-color: $color-7;
+  color: $color-8;
+  margin: 0;
+  width: $body-width;
+  min-height: calc(100vh - 70px);
+  margin-bottom: $padding-full-sides*1.4;
 }
 
+a{
+ text-decoration: underline;
+ color: inherit;
+}
+
+>>>>>>> ec6d9fef9e80c564dd482799693ef57e422c1646
+
+.main > div, .preamble, aside {
+   // border: 1px solid black;
+   padding: 20px;
+}
+
+<<<<<<< HEAD
  .intro header,
  .intro .summary {
 <<<<<<< HEAD
@@ -61,45 +80,95 @@ a{
      h2 {
          text-align: right;
      }
+=======
+.page-wrapper {
 
-     p:first-of-type {
-         padding-top: 0px;
-     }
- }
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "topa topa topa"
+        "bodya bodya side"
+        "bodya bodya side"
+        "bodya bodya side"
+        "bodya bodya ."
+        "bodya bodya .";
+}
 
+#zen-supporting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        ". one"
+        "two ."
+        ". three"
+        "four ."
+        "foota foota";
+    grid-area: bodya;
+}
+>>>>>>> ec6d9fef9e80c564dd482799693ef57e422c1646
+
+#zen-intro{
+   grid-area: topa;
+}
+
+<<<<<<< HEAD
  .preamble {
      grid-template-columns: 1fr 1fr;
      grid-template-areas: one;
      grid-area: bodya;
  }
+=======
+.intro header,
+.intro .summary {
+    // background-color: $banner;
+    padding: $padding-full $padding-full-sides;
+    h1,
+    h2 {
+        text-align: right;
+    }
 
- .main > div,
- .preamble,
- aside {}
+    p:first-of-type {
+        padding-top: 0px;
+    }
+}
 
- .intro header,
- .intro .summary {
-     text-align: right;
- }
+.preamble {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: one;
+    grid-area: bodya;
+}
+>>>>>>> ec6d9fef9e80c564dd482799693ef57e422c1646
 
- .main > :nth-child(1),
- .preamble {
-     grid-area: one;
- }
+.main > div,
+.preamble,
+aside {}
 
- .main > :nth-child(2),
- .preamble {
-     grid-area: two;
- }
+.intro header,
+.intro .summary {
+    text-align: right;
+}
 
- .main > :nth-child(3) {
-     grid-area: three;
- }
+.main > :nth-child(1),
+.preamble {
+    grid-area: one;
+}
 
- .main > :nth-child(4) {
-     grid-area: four;
- }
+.main > :nth-child(2),
+.preamble {
+    grid-area: two;
+}
 
+.main > :nth-child(3) {
+    grid-area: three;
+}
+
+.main > :nth-child(4) {
+    grid-area: four;
+}
+
+<<<<<<< HEAD
  aside {
    background-color: $footer;
    opacity: 0.7;
@@ -123,3 +192,29 @@ a{
       text-transform: uppercase;
     }
  }
+=======
+aside {
+  background-color: $footer;
+  opacity: 0.7;
+  grid-area: side;
+}
+
+footer {
+  z-index: 1;
+   padding: $padding-full $padding-full-sides;
+   background: $footer;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   // border: 1px solid black;
+   text-align: center;
+   padding: 20px;
+   a{
+     text-decoration: none;
+     color: $color-8;
+     padding: 0 10px;
+     text-transform: uppercase;
+   }
+}
+>>>>>>> ec6d9fef9e80c564dd482799693ef57e422c1646
