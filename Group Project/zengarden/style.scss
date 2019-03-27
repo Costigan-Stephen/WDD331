@@ -9,14 +9,7 @@
 //sass --watch style.scss:style.css
 @import 'partials/variables';
 @import 'partials/colors';
-<<<<<<< HEAD
-@import 'partials/grid';
-@import 'partials/old'; //The original css, all commented out, but included in case we use any of it.
-@import 'partials/aside-layout';
-@import 'partials/header'; 
-=======
 @import 'partials/header';
 @import 'partials/grid';
 @import 'partials/old'; //The original css, all commented out, but included in case we use any of it.
 @import 'partials/aside';
->>>>>>> ec6d9fef9e80c564dd482799693ef57e422c1646
