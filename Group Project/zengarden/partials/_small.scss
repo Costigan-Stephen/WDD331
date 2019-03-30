@@ -7,14 +7,15 @@ body {
     grid-row-gap: 1.2vw;
 //    grid-auto-flow: column;
 }
-    
-header{
-    padding: 0 $padding-mobile;    
 
-    h1, h2{
+/* HAEADER */
+header{
+    padding: 0 $padding-mobile;
+
+    h1, h2, p{
         text-align: center;
     }
-   
+
     h2 {
         margin-bottom: 0px;
     }
@@ -23,30 +24,46 @@ header{
 .intro header, .intro .summary {
     text-align: center;
     padding: 0 $padding-mobile;
-    
+
     p:first-of-type {
         margin-top: 0px;
-        padding-top: 10px;   
+        padding-top: 10px;
     }
 }
 
+#zen-preamble.preamble, .summary {
+    padding-left: $padding-full !important;
+    padding-right: $padding-full !important;
+}
+
 .main > div, .preamble, aside {
-    border: 1px solid black;
     margin: 2vw;
     padding: 0 $padding-mobile 20px $padding-mobile;
     background-color: $background-article;
-    
+
 }
+/* ASIDE */
 
 aside {
     top: 13px;
-    background-color: $background-aside;
+    background-color: rgba(70, 9, 66,.9);
     box-shadow: 3px 3px 3px gray;
-    padding: $padding-mobile;
+    padding: $padding-mobile-aside;
+    position: absolute;
+    top: -1px;
+    right: -360px;
+    color: white;
+}
+
+aside a {
+  color: #ffffffa5;
+}
+
+aside a {
+  color: $color-5;
 }
 
 footer{
-    border: 1px solid black;
     margin: 2vw;
     background-color: $footer;
     padding: $padding-mobile;

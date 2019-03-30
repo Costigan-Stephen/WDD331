@@ -13,51 +13,106 @@ section {
   color: white;
   margin-left: -10px;
   margin-right: -10px;
-  margin-top: -10px; }
+  margin-top: -10px;
+}
 
+#zen-preamble.preamble {
+  background: url("./assets/palmTreeLeft.svg");
+  height: auto;
+  padding: 150px 66% 30px 20px;
+}
 
-} }
+.summary {
+  padding-left: 66% !important;
+}
+
+header h1 {
+  font-family: "Rock Salt", serif;
+  font-size: 2.5vw;
+  margin-bottom: 0px;
+}
+
+header h2 {
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-family: "Rock Salt", serif;
+  letter-spacing: 0.3em;
+}
+
+p, a {
+  font-family: "Lato", sans-serif;
+}
 
 @media (max-width: 700px) {
   html {
-    display: grid; }
+    display: grid;
+  }
 
   body {
-    grid-row-gap: 1.2vw; }
+    grid-row-gap: 1.2vw;
+  }
 
+  /* HAEADER */
   header {
-    padding: 0 2vw; }
-    header h1, header h2 {
-      text-align: center; }
-    header h2 {
-      margin-bottom: 0px; }
+    padding: 0 2vw;
+  }
+  header h1, header h2, header p {
+    text-align: center;
+  }
+  header h2 {
+    margin-bottom: 0px;
+  }
 
   .intro header, .intro .summary {
     text-align: center;
-    padding: 0 2vw; }
-    .intro header p:first-of-type, .intro .summary p:first-of-type {
-      margin-top: 0px;
-      padding-top: 10px; }
+    padding: 0 2vw;
+  }
+  .intro header p:first-of-type, .intro .summary p:first-of-type {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+
+  #zen-preamble.preamble, .summary {
+    padding-left: 0.5vw !important;
+    padding-right: 0.5vw !important;
+  }
 
   .main > div, .preamble, aside {
-    border: 1px solid black;
     margin: 2vw;
     padding: 0 2vw 20px 2vw;
-    background-color: white; }
+    background-color: white;
+  }
 
+  /* ASIDE */
   aside {
     top: 13px;
-    background-color: white;
+    background-color: rgba(70, 9, 66, 0.9);
     box-shadow: 3px 3px 3px gray;
-    padding: 2vw; }
+    padding: 3vw;
+    position: absolute;
+    top: -1px;
+    right: -360px;
+    color: white;
+  }
+
+  aside a {
+    color: #ffffffa5;
+  }
+
+  aside a {
+    color: #ff6f01;
+  }
 
   footer {
-    border: 1px solid black;
     margin: 2vw;
     background-color: #041105;
     padding: 2vw;
     text-align: center;
-    grid-area: foot; } }
+    grid-area: foot;
+  }
+}
 @media (min-width: 700px) {
   html {
     background-color: #142816;
@@ -65,93 +120,86 @@ section {
     margin: 0;
     width: 100%;
     min-height: calc(100vh - 70px);
-    margin-bottom: 3.5vw; }
+    margin-bottom: 3.5vw;
+  }
 
   a {
     text-decoration: underline;
-    color: inherit; }
+    color: inherit;
+  }
 
   .main > div, .preamble, aside {
-    padding: 20px; }
-    
-    .extra1{
-    content:url("../assets/treeLeft.svg");
-    width:600px;
-    height:auto;
-    padding-bottom: 300px;
-    margin-top:-8000px;
-    margin-right: 312px;
-    position: absolute;
-    bottom:0;
-    left:0;
-}
-
-.extra2{
-    transform: rotateY(180deg);
-        content:url("../assets/treeLeft.svg");
-    width:300px;
-    height:auto;
-    padding-bottom: 200px;
-    position: absolute;
-    bottom:0;
-    right:0;
-    
+    padding: 20px;
+  }
 
   .page-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya ." "bodya bodya ."; }
+    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya ." "bodya bodya .";
+  }
 
   #zen-supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: ". one" "two ." ". three" "four ." "foota foota";
-    grid-area: bodya; }
+    grid-area: bodya;
+  }
 
   #zen-intro {
-    grid-area: topa; }
+    grid-area: topa;
+  }
 
   .intro header,
-  .intro .summary {
-    padding: 0.5vw 2.5vw; }
-    .intro header h1,
-    .intro header h2,
-    .intro .summary h1,
-    .intro .summary h2 {
-      text-align: right; }
-    .intro header p:first-of-type,
-    .intro .summary p:first-of-type {
-      padding-top: 0px; }
+.intro .summary {
+    padding: 0.5vw 2.5vw;
+  }
+  .intro header h1,
+.intro header h2,
+.intro .summary h1,
+.intro .summary h2 {
+    text-align: right;
+  }
+  .intro header p:first-of-type,
+.intro .summary p:first-of-type {
+    padding-top: 0px;
+  }
 
   .preamble {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
-    grid-area: bodya; }
+    grid-area: bodya;
+  }
 
   .intro header,
-  .intro .summary {
-    text-align: right; }
+.intro .summary {
+    text-align: right;
+  }
 
   .main > :nth-child(1),
-  .preamble {
-    grid-area: one; }
+.preamble {
+    grid-area: one;
+  }
 
   .main > :nth-child(2),
-  .preamble {
-    grid-area: two; }
+.preamble {
+    grid-area: two;
+  }
 
   .main > :nth-child(3) {
-    grid-area: three; }
+    grid-area: three;
+  }
 
   .main > :nth-child(4) {
-    grid-area: four; }
+    grid-area: four;
+  }
 
   aside {
     background-color: #041105;
     opacity: 0.7;
-    grid-area: side; }
+    grid-area: side;
+  }
 
   footer {
     z-index: 1;
@@ -162,12 +210,15 @@ section {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px; }
-    footer a {
-      text-decoration: none;
-      color: #63a56a;
-      padding: 0 10px;
-      text-transform: uppercase; } }
+    padding: 20px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #63a56a;
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+}
 /* basic elements 
 html {
     margin: 0;
@@ -337,34 +388,30 @@ footer a:link, footer a:visited {
     } */
 aside ul {
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+}
 
 .wrapper > div {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .wrapper li {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
-header h1 {
-  font-family: "Rock Salt", serif;
-  font-size: 2.5vw;
-  margin-bottom: 0px; }
-
-header h2 {
-  font-family: "Lato", sans-serif; }
-
-h3 {
-  font-family: "Rock Salt", serif;
-  letter-spacing: .3em; }
-
-p, a {
-  font-family: "Lato", sans-serif; }
-
-.preamble {
-  padding-top: 150px;
-  padding-right: 66%; }
-
-.summary {
-  padding-left: 66% !important; }
+/* Extra #6 Mobile Menu */
+.extra6 {
+  background-image: url(./assets/aside-arrow-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 60px;
+  background-color: #460942;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  border-radius: 10px 0px 0px 10px;
+  border-left: 1px solid white;
+}
 
 /*# sourceMappingURL=style.css.map */
