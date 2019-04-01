@@ -1,10 +1,11 @@
 html {
+  background-image: url(./assets/tropical-flowers.svg);
   background-color: $color-7;
   color: $color-8;
   margin: 0;
   width: $body-width;
   min-height: calc(100vh - 70px);
-  margin-bottom: $padding-full-sides*1.4;
+  padding-bottom: $padding-full-sides*1.4;
 }
 
 a{

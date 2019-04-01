@@ -46,14 +46,41 @@ header{
 
 aside {
     top: 13px;
-    background-color: rgba(70, 9, 66,.9);
+    background-color: rgba(70, 9, 66,.95);
     box-shadow: 3px 3px 3px gray;
     padding: $padding-mobile-aside;
     position: absolute;
     top: -1px;
-    right: -360px;
+    right: -340px;
     color: white;
+    transition: .5s ease-in-out;
+    margin: 0px;
+    width: 300px;
 }
+
+aside:hover {
+ right: 0px;
+}
+
+aside:hover:after {
+  background-image: url(./assets/aside-arrow-right.png);
+}
+
+aside:after {
+    background-color: #460942;
+    background-image: url(./assets/aside-arrow-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 60px;
+    right: 330px;
+    position: absolute;
+    top: 150px;
+    width: 45px;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+  }
 
 aside a {
   color: #ffffffa5;
@@ -62,6 +89,8 @@ aside a {
 aside a {
   color: $color-5;
 }
+
+/* FOOTER */
 
 footer{
     margin: 2vw;
