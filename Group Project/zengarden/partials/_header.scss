@@ -16,6 +16,7 @@ section {
 
 
 #zen-preamble.preamble{
+    position: relative;
     background: none;
     height:auto;
     padding: 150px 66% 30px 20px;
@@ -29,7 +30,7 @@ section {
 
 header h1 {
     font-family: $header-font;
-    font-size: 2.5vw;
+    font-size: 34pt;
     margin-bottom: 0px;
 }
 

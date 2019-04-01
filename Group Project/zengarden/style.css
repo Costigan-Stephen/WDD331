@@ -16,6 +16,7 @@ section {
   margin-top: -10px; }
 
 #zen-preamble.preamble {
+  position: relative;
   background: none;
   height: auto;
   padding: 150px 66% 30px 20px; }
@@ -25,7 +26,7 @@ section {
 
 header h1 {
   font-family: "Rock Salt", serif;
-  font-size: 2.5vw;
+  font-size: 34pt;
   margin-bottom: 0px; }
 
 header h2 {
@@ -40,6 +41,7 @@ p, a {
 
 @media (max-width: 700px) {
   html {
+    background-image: url(./assets/tropical-flowers-sm.svg);
     display: grid;
     background-color: #142816;
     color: #63a56a; }
@@ -47,8 +49,13 @@ p, a {
   body {
     grid-row-gap: 1.2vw; }
 
+  a {
+    text-decoration: underline;
+    color: inherit; }
+
   /* HAEADER */
   header {
+    margin-top: -50px;
     padding: 0 2vw; }
     header h1, header h2, header p {
       text-align: center; }
@@ -64,6 +71,8 @@ p, a {
       padding-top: 10px; }
 
   #zen-preamble.preamble, .summary {
+    z-index: 4;
+    position: relative;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important; }
 
@@ -411,8 +420,27 @@ aside ul {
     position: absolute;
     top: 500px;
     left: 0px;
-    background-image: url("./assets/palmTreeLeft.svg");
+    background-image: url("./assets/palmTreeRight.svg");
+    transform: scaleX(-1);
     background-repeat: no-repeat;
-    background-size: contain; } }
+    background-size: contain; }
+
+  .extra6 {
+    position: absolute;
+    background-color: #ffaa19;
+    width: 4em;
+    height: 4em;
+    top: 650px;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    animation: ripple 0.7s linear infinite; }
+
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 186, 68, 0.3), 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3); }
+    100% {
+      box-shadow: 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3), 0 0 0 2.5em rgba(255, 186, 68, 0); } } }
 
 /*# sourceMappingURL=style.css.map */

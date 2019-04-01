@@ -1,5 +1,6 @@
 
 html{
+    background-image: url(./assets/tropical-flowers-sm.svg);
     display: grid;
     background-color: $color-7;
     color: $color-8;
@@ -10,9 +11,14 @@ body {
 //    grid-auto-flow: column;
 }
 
+a{
+ text-decoration: underline;
+ color: inherit;
+}
+
 /* HAEADER */
 header{
-
+    margin-top: -50px;
     padding: 0 $padding-mobile;
 
     h1, h2, p{
@@ -36,6 +42,8 @@ header{
 }
 
 #zen-preamble.preamble, .summary {
+    z-index: 4;
+    position: relative;
     padding-left: $padding-full !important;
     padding-right: $padding-full !important;
 }
