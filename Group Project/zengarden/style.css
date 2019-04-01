@@ -143,7 +143,7 @@ p, a {
 }
 @media (min-width: 700px) {
   html {
-    background-image: url(./assets/tropical-flowers.svg);
+    background-image: url(./assets/tropical-flowers-sm.svg);
     background-color: #142816;
     color: #63a56a;
     margin: 0;
