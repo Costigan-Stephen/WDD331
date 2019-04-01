@@ -65,6 +65,7 @@ a{
 }
 
 .preamble {
+    z-index: 1;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
     grid-area: bodya;

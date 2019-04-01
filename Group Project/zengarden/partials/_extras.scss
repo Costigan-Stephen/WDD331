@@ -2,6 +2,7 @@
 
 /* Extra #1 Plam Tree Right */
 .extra1 {
+  z-index: 0;
   height: 500px;
   width: 300px;
   position: absolute;
@@ -10,4 +11,21 @@
   background-image: url("./assets/palmTreeRight.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (min-width: 700px) {
+
+  /* Extra #1 Plam Tree Right */
+  .extra2 {
+      z-index: 0;
+      height: 500px;
+      width: 300px;
+      position: absolute;
+      top: 500px;
+      left: 0px;
+      background-image: url("./assets/palmTreeLeft.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+
 }
