@@ -183,6 +183,7 @@ p, a {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
     grid-area: bodya; }
+    
 
   .intro header,
   .intro .summary {
@@ -412,18 +413,20 @@ aside ul {
   background-size: contain; }
 
 .extra5 {
-  transform: scale(0.2);
+ 
   fill: #142816;
   z-index: 0;
-  height: 400px;
+  height: 200px;
   width: 100%;
-  left: 0;
+  top:875px;
+    left: 0;
   position: absolute;
-  top: 480px;
   padding: 0;
-  background-image: url("./assets/grass.svg");
-  background-size: auto 100%;
+  background-image: url("../assets/grass.svg");
+  background-size: 100%;
   background-repeat: repeat-x; }
+
+
 
 @media (min-width: 700px) {
   /* Extra #1 Plam Tree Right */
