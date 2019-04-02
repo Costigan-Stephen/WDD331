@@ -6,12 +6,29 @@
   height: 500px;
   width: 300px;
   position: absolute;
-  top: 500px;
+  top: 450px;
   right: 0px;
   background-image: url("./assets/palmTreeRight.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+//grass
+.extra5 {
+  transform: scale(0.2);
+  fill: $color-7;
+  z-index: 0;
+  height: 400px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 480px;
+  padding: 0;
+  background-image: url("./assets/grass.svg");
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
 
 @media (min-width: 700px) {
 
@@ -21,7 +38,7 @@
       height: 500px;
       width: 300px;
       position: absolute;
-      top: 500px;
+      top: 450px;
       left: 0px;
       background-image: url("./assets/palmTreeRight.svg");
       transform: scaleX(-1);
@@ -39,7 +56,7 @@
     background-color: $sun;
     width: 4em;
     height: 4em;
-    top: 650px;
+    top: 600px;
     left: 50%;
     margin-left: auto;
     margin-right: auto;
