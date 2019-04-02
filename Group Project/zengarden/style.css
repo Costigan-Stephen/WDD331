@@ -514,7 +514,7 @@ aside ul {
 }
 /* Water Extra 3 & 4 */
 .extra3 {
-  background: url(./assets/light-waves.svg);
+  background: url(./assets/waves-light.svg);
   position: absolute;
   top: 800px;
   left: -30px;
@@ -543,7 +543,7 @@ aside ul {
   }
 }
 .extra4 {
-  background: url(./assets/dark-waves.svg);
+  background: url(./assets/waves-dark.svg);
   position: absolute;
   top: 780px;
   left: -15px;
