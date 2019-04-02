@@ -183,14 +183,14 @@ p, a {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya ." "bodya bodya .";
+    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side";
   }
 
   #zen-supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: ". one" "two ." ". three" "four ." "foota foota";
+    grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
     grid-area: bodya;
   }
 
@@ -512,7 +512,7 @@ aside ul {
     }
   }
 }
-/* Water Extra 3 */
+/* Water Extra 3 & 4 */
 .extra3 {
   background: url(./assets/light-waves.svg);
   position: absolute;
