@@ -13,93 +13,75 @@ section {
   color: white;
   margin-left: -10px;
   margin-right: -10px;
-  margin-top: -10px;
-}
+  margin-top: -10px; }
 
 #zen-preamble.preamble {
   position: relative;
   background: none;
   height: auto;
-  padding: 150px 66% 80px 20px;
-}
+  padding: 150px 66% 80px 20px; }
 
 .summary {
-  padding-left: 66% !important;
-}
+  padding-left: 66% !important; }
 
 header h1 {
   font-family: "Rock Salt", serif;
   font-size: 34pt;
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
 
 header h2 {
-  font-family: "Lato", sans-serif;
-}
+  font-family: "Lato", sans-serif; }
 
 h3 {
   font-family: "Rock Salt", serif;
-  letter-spacing: 0.3em;
-}
+  letter-spacing: .3em; }
 
 p, a {
-  font-family: "Lato", sans-serif;
-}
+  font-family: "Lato", sans-serif; }
 
 @media (max-width: 700px) {
   html {
     background-image: url(./assets/tropical-flowers-sm.svg);
     display: grid;
     background-color: #142816;
-    color: #63a56a;
-  }
+    color: #63a56a; }
 
   body {
-    grid-row-gap: 1.2vw;
-  }
+    grid-row-gap: 1.2vw; }
 
   a {
     text-decoration: underline;
-    color: inherit;
-  }
+    color: inherit; }
 
   /* HAEADER */
   header {
     margin-top: -50px;
-    padding: 0 2vw;
-  }
-  header h1, header h2, header p {
-    text-align: center;
-  }
-  header h2 {
-    margin-bottom: 0px;
-  }
+    padding: 0 2vw; }
+    header h1, header h2, header p {
+      text-align: center; }
+    header h2 {
+      margin-bottom: 0px; }
 
   .intro {
-    padding: 2vw;
-  }
+    padding: 2vw; }
 
   .intro header, .intro .summary {
-    text-align: center;
-  }
-  .intro header p:first-of-type, .intro .summary p:first-of-type {
-    z-index: 3;
-    margin-top: 0px;
-    padding-top: 10px;
-  }
+    text-align: center; }
+    .intro header p:first-of-type, .intro .summary p:first-of-type {
+      z-index: 3;
+      margin-top: 0px;
+      padding-top: 10px; }
 
   #zen-preamble.preamble, .summary {
     z-index: 4;
     position: relative;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
-    text-align: center;
-  }
+    text-align: center; }
 
   .main > div, .preamble, aside {
     margin: 2vw;
-    padding: 0 2vw 20px 2vw;
-  }
+    padding: 0 2vw 20px 2vw; }
 
   /* ASIDE */
   aside {
@@ -112,18 +94,15 @@ p, a {
     top: -1px;
     right: -340px;
     color: white;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
     margin: 0px;
-    width: 300px;
-  }
+    width: 300px; }
 
   aside:hover {
-    right: 0px;
-  }
+    right: 0px; }
 
   aside:hover:after {
-    background-image: url(./assets/aside-arrow-right.png);
-  }
+    background-image: url(./assets/aside-arrow-right.png); }
 
   aside:after {
     z-index: 10;
@@ -139,29 +118,23 @@ p, a {
     width: 45px;
     border-left: 1px solid white;
     border-radius: 5px;
-    transition: 0.5s ease-in-out;
-  }
+    transition: .5s ease-in-out; }
 
   aside a {
-    color: #ffffffa5;
-  }
+    color: #ffffffa5; }
 
   aside a {
-    color: #ff6f01;
-  }
+    color: #ff6f01; }
 
   p {
-    z-index: 3;
-  }
+    z-index: 3; }
 
   /* FOOTER */
   footer {
     background-color: #041105;
     padding: 2vw;
     text-align: center;
-    grid-area: foot;
-  }
-}
+    grid-area: foot; } }
 @media (min-width: 700px) {
   html {
     background-image: url(./assets/tropical-flowers-sm.svg);
@@ -170,24 +143,20 @@ p, a {
     margin: 0;
     width: 100%;
     min-height: calc(100vh - 70px);
-    padding-bottom: 3.5vw;
-  }
+    padding-bottom: 3.5vw; }
 
   a {
     text-decoration: underline;
-    color: inherit;
-  }
+    color: inherit; }
 
   .main > div, .preamble, aside {
-    padding: 20px;
-  }
+    padding: 20px; }
 
   .page-wrapper {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side";
-  }
+    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side"; }
 
   #zen-supporting {
     display: grid;
@@ -197,81 +166,56 @@ p, a {
     grid-area: bodya;
     background-image: url(./assets/tropical-flowers-sm.svg);
     z-index: 100;
-    background-color: #142816;
-  }
+    background-color: #142816; }
 
   #zen-intro {
-    grid-area: topa;
-  }
-
-  /* Can be used for the grass */
-  section:after {
-    z-index: 101;
-    background-color: #142816;
-    content: "can be used as grass";
-    height: 60px;
-    position: absolute;
-    top: 850px;
-    width: 110%;
-    overflow: hidden;
-  }
+    grid-area: topa; }
 
   h3.select, #zen-supporting {
-    padding-top: 30px;
-  }
+    padding-top: 30px; }
 
   .intro header,
-.intro .summary {
-    padding: 0.5vw 2.5vw;
-  }
-  .intro header h1,
-.intro header h2,
-.intro .summary h1,
-.intro .summary h2 {
-    text-align: right;
-  }
-  .intro header p:first-of-type,
-.intro .summary p:first-of-type {
-    padding-top: 0px;
-  }
+  .intro .summary {
+    padding: 0.5vw 2.5vw; }
+    .intro header h1,
+    .intro header h2,
+    .intro .summary h1,
+    .intro .summary h2 {
+      text-align: right; }
+    .intro header p:first-of-type,
+    .intro .summary p:first-of-type {
+      padding-top: 0px; }
 
   .preamble {
     z-index: 1;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
-    grid-area: bodya;
-  }
+    grid-area: bodya; }
 
   .intro header,
-.intro .summary {
-    text-align: right;
-  }
+  .intro .summary {
+    text-align: right; }
 
   .main > :nth-child(1),
-.preamble {
-    grid-area: one;
-  }
+  .preamble {
+    grid-area: one; }
 
   .main > :nth-child(2),
-.preamble {
-    grid-area: two;
-  }
+  .preamble {
+    grid-area: two; }
 
   .main > :nth-child(3) {
-    grid-area: three;
-  }
+    grid-area: three; }
 
   .main > :nth-child(4) {
-    grid-area: four;
-  }
+    grid-area: four; }
 
   aside {
     background-color: #041105;
-    grid-area: side;
-  }
+    grid-area: side; }
 
   footer {
-    z-index: 1;
+    z-index: 500;
     padding: 0.5vw 2.5vw;
     background: #041105;
     position: fixed;
@@ -279,15 +223,12 @@ p, a {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px;
-  }
-  footer a {
-    text-decoration: none;
-    color: #63a56a;
-    padding: 0 10px;
-    text-transform: uppercase;
-  }
-}
+    padding: 20px; }
+    footer a {
+      text-decoration: none;
+      color: #63a56a;
+      padding: 0 10px;
+      text-transform: uppercase; } }
 /* basic elements 
 html {
     margin: 0;
@@ -456,30 +397,24 @@ footer a:link, footer a:visited {
     height: 110px;
     } */
 aside {
-  z-index: 100;
-}
+  z-index: 50; }
 
 aside h3 {
   font-family: "Rock Salt", serif;
-  letter-spacing: 0.3em;
-}
+  letter-spacing: .3em; }
 
 aside p, aside a {
-  font-family: "Lato", sans-serif;
-}
+  font-family: "Lato", sans-serif; }
 
 aside ul {
   text-decoration: none;
-  list-style: none;
-}
+  list-style: none; }
 
 .wrapper > div {
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
 .wrapper li {
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 /* Extra #1 Plam Tree Right */
 .extra1 {
@@ -491,23 +426,18 @@ aside ul {
   right: 0px;
   background-image: url("./assets/palmTreeRight.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-}
+  background-size: contain; }
 
-.extra5 {
-  transform: scale(0.2);
-  fill: #142816;
-  z-index: 0;
-  height: 400px;
-  width: 100%;
-  left: 0;
+/* Can be used for the grass */
+section:before {
+  z-index: 101;
+  background-color: #142816;
+  content: "can be used as grass";
+  height: 60px;
   position: absolute;
-  top: 480px;
-  padding: 0;
-  background-image: url("./assets/grass.svg");
-  background-size: auto 100%;
-  background-repeat: repeat-x;
-}
+  top: 780px;
+  width: 110%;
+  overflow: hidden; }
 
 @media (min-width: 700px) {
   /* Extra #1 Plam Tree Right */
@@ -521,8 +451,7 @@ aside ul {
     background-image: url("./assets/palmTreeRight.svg");
     transform: scaleX(-1);
     background-repeat: no-repeat;
-    background-size: contain;
-  }
+    background-size: contain; }
 
   .extra6 {
     position: absolute;
@@ -534,122 +463,90 @@ aside ul {
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    animation: ripple 0.7s linear infinite;
-  }
+    animation: ripple 0.7s linear infinite; }
 
   @keyframes ripple {
     0% {
-      box-shadow: 0 0 0 0 rgba(255, 186, 68, 0.3), 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3);
-    }
+      box-shadow: 0 0 0 0 rgba(255, 186, 68, 0.3), 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3); }
     100% {
-      box-shadow: 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3), 0 0 0 2.5em rgba(255, 186, 68, 0);
-    }
-  }
-}
+      box-shadow: 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3), 0 0 0 2.5em rgba(255, 186, 68, 0); } } }
 /* Water Extra 3 & 4 */
 .extra3 {
   background: url(./assets/waves-light.svg);
   position: absolute;
-  top: 800px;
-  left: -30px;
+  top: 700px;
+  left: -35px;
   z-index: 10;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
   width: 110%;
-  animation: lightwaves 2s infinite;
-  overflow: hidden;
-}
+  animation: lightwaves 4s infinite;
+  overflow: hidden; }
 
 @keyframes lightwaves {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
+  0%,100% {
+    transform: translate(0, 0); }
   25% {
     transform: translate(5px, 5px);
-    transform: scale(1.05);
-  }
+    transform: scale(1.05); }
   50% {
-    transform: translate(25px, 5px);
-  }
+    transform: translate(25px, 5px); }
   75% {
     transform: translate(12px, 10px);
-    transform: scale(1.05);
-  }
-}
+    transform: scale(1.05); } }
 .extra4 {
   background: url(./assets/waves-dark.svg);
   position: absolute;
-  top: 780px;
+  top: 740px;
   left: -15px;
-  z-index: 9;
+  z-index: 11;
   background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
   width: 110%;
   animation: darkwaves 3s infinite;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 @keyframes darkwaves {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
+  0%,100% {
+    transform: translate(0, 0); }
   30% {
     transform: translate(-25px, -5px);
-    transform: scale(1.02);
-  }
+    transform: scale(1.02); }
   60% {
-    transform: translate(12px, 10px);
-  }
+    transform: translate(12px, 10px); }
   80% {
-    transform: translate(-5px, -5px);
-  }
-}
+    transform: translate(-5px, -5px); } }
 @media (max-width: 1738px) {
   .extra3 {
-    top: 840px;
-  }
+    top: 840px; }
 
   .extra4 {
-    top: 820px;
-  }
-}
+    top: 820px; } }
 @media (max-width: 1562px) {
   .extra3 {
-    top: 880px;
-  }
+    top: 880px; }
 
   .extra4 {
-    top: 860px;
-  }
-}
+    top: 860px; } }
 @media (max-width: 1407px) {
   .extra3 {
-    top: 920px;
-  }
+    top: 920px; }
 
   .extra4 {
-    top: 900px;
-  }
-}
+    top: 900px; } }
 @media (max-width: 1223px) {
   .extra3 {
-    top: 960px;
-  }
+    top: 960px; }
 
   .extra4 {
-    top: 940px;
-  }
-}
+    top: 940px; } }
 @media (max-width: 1000px) {
   .extra3 {
-    display: none;
-  }
+    display: none; }
 
   .extra4 {
-    display: none;
-  }
-}
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

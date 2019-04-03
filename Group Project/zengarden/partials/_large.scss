@@ -53,18 +53,6 @@ a{
    grid-area: topa;
 }
 
-/* Can be used for the grass */
-section:after {
-  z-index: 101;
-  background-color:  $color-7;
-  content: "can be used as grass";
-  height: 60px;
-  position: absolute;
-  top: 850px;
-  width: 110%;
-  overflow: hidden;
-}
-
 h3.select, #zen-supporting{
   padding-top: 30px;
 }
@@ -123,7 +111,7 @@ aside {
 }
 
 footer {
-   z-index: 1;
+   z-index: 500;
    padding: $padding-full $padding-full-sides;
    background: $footer;
    position: fixed;
