@@ -93,6 +93,7 @@
   height: 100px;
   width: 110%;
   animation: lightwaves 2s infinite;
+  overflow: hidden;
 }
 
 @keyframes lightwaves {
@@ -113,6 +114,7 @@
   height: 120px;
   width: 110%;
   animation: darkwaves 3s infinite;
+  overflow: hidden;
 }
 
 @keyframes darkwaves {

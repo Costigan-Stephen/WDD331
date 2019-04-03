@@ -204,6 +204,22 @@ p, a {
     grid-area: topa;
   }
 
+  /* Can be used for the grass */
+  section:after {
+    z-index: 101;
+    background-color: #142816;
+    content: "can be used as grass";
+    height: 60px;
+    position: absolute;
+    top: 850px;
+    width: 110%;
+    overflow: hidden;
+  }
+
+  h3.select, #zen-supporting {
+    padding-top: 30px;
+  }
+
   .intro header,
 .intro .summary {
     padding: 0.5vw 2.5vw;
@@ -542,6 +558,7 @@ aside ul {
   height: 100px;
   width: 110%;
   animation: lightwaves 2s infinite;
+  overflow: hidden;
 }
 
 @keyframes lightwaves {
@@ -571,6 +588,7 @@ aside ul {
   height: 120px;
   width: 110%;
   animation: darkwaves 3s infinite;
+  overflow: hidden;
 }
 
 @keyframes darkwaves {

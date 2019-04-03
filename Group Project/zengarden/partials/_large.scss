@@ -53,6 +53,22 @@ a{
    grid-area: topa;
 }
 
+/* Can be used for the grass */
+section:after {
+  z-index: 101;
+  background-color:  $color-7;
+  content: "can be used as grass";
+  height: 60px;
+  position: absolute;
+  top: 850px;
+  width: 110%;
+  overflow: hidden;
+}
+
+h3.select, #zen-supporting{
+  padding-top: 30px;
+}
+
 .intro header,
 .intro .summary {
     // background-color: $banner;
