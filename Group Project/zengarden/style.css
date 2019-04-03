@@ -20,7 +20,7 @@ section {
   position: relative;
   background: none;
   height: auto;
-  padding: 150px 66% 30px 20px;
+  padding: 150px 66% 80px 20px;
 }
 
 .summary {
@@ -75,9 +75,12 @@ p, a {
     margin-bottom: 0px;
   }
 
+  .intro {
+    padding: 2vw;
+  }
+
   .intro header, .intro .summary {
     text-align: center;
-    padding: 0 2vw;
   }
   .intro header p:first-of-type, .intro .summary p:first-of-type {
     z-index: 3;
@@ -90,6 +93,7 @@ p, a {
     position: relative;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
+    text-align: center;
   }
 
   .main > div, .preamble, aside {
@@ -102,7 +106,7 @@ p, a {
     z-index: 10;
     top: 13px;
     background-color: rgba(70, 9, 66, 0.95);
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px black;
     padding: 3vw;
     position: absolute;
     top: -1px;
@@ -131,7 +135,7 @@ p, a {
     height: 60px;
     right: 330px;
     position: absolute;
-    top: 150px;
+    top: 90px;
     width: 45px;
     border-left: 1px solid white;
     border-radius: 5px;
@@ -152,7 +156,6 @@ p, a {
 
   /* FOOTER */
   footer {
-    margin: 2vw;
     background-color: #041105;
     padding: 2vw;
     text-align: center;
@@ -192,6 +195,9 @@ p, a {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
     grid-area: bodya;
+    background-image: url(./assets/tropical-flowers-sm.svg);
+    z-index: 100;
+    background-color: #142816;
   }
 
   #zen-intro {
@@ -245,7 +251,6 @@ p, a {
 
   aside {
     background-color: #041105;
-    opacity: 0.7;
     grid-area: side;
   }
 
@@ -434,6 +439,19 @@ footer a:link, footer a:visited {
     width: 148px; 
     height: 110px;
     } */
+aside {
+  z-index: 100;
+}
+
+aside h3 {
+  font-family: "Rock Salt", serif;
+  letter-spacing: 0.3em;
+}
+
+aside p, aside a {
+  font-family: "Lato", sans-serif;
+}
+
 aside ul {
   text-decoration: none;
   list-style: none;
@@ -568,6 +586,51 @@ aside ul {
   }
   80% {
     transform: translate(-5px, -5px);
+  }
+}
+@media (max-width: 1738px) {
+  .extra3 {
+    top: 840px;
+  }
+
+  .extra4 {
+    top: 820px;
+  }
+}
+@media (max-width: 1562px) {
+  .extra3 {
+    top: 880px;
+  }
+
+  .extra4 {
+    top: 860px;
+  }
+}
+@media (max-width: 1407px) {
+  .extra3 {
+    top: 920px;
+  }
+
+  .extra4 {
+    top: 900px;
+  }
+}
+@media (max-width: 1223px) {
+  .extra3 {
+    top: 960px;
+  }
+
+  .extra4 {
+    top: 940px;
+  }
+}
+@media (max-width: 1000px) {
+  .extra3 {
+    display: none;
+  }
+
+  .extra4 {
+    display: none;
   }
 }
 

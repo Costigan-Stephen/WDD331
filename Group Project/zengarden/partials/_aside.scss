@@ -1,3 +1,16 @@
+aside {
+  z-index: 100;
+}
+
+aside h3 {
+  font-family: $header-font;
+  letter-spacing: .3em;
+}
+
+aside p, aside a {
+  font-family: $body-font;
+}
+
 aside ul {
     text-decoration: none;
     list-style: none;

@@ -44,6 +44,9 @@ a{
         "four four"
         "foota foota";
     grid-area: bodya;
+    background-image: url(./assets/tropical-flowers-sm.svg);
+    z-index: 100;
+    background-color: $color-7;
 }
 
 #zen-intro{
@@ -100,7 +103,6 @@ aside {}
 
 aside {
   background-color: $footer;
-  opacity: 0.7;
   grid-area: side;
 }
 

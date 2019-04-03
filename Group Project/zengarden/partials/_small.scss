@@ -30,9 +30,12 @@ header{
     }
 }
 
+.intro {
+  padding: $padding-mobile;
+}
+
 .intro header, .intro .summary {
     text-align: center;
-    padding: 0 $padding-mobile;
 
     p:first-of-type {
         z-index: 3;
@@ -46,6 +49,7 @@ header{
     position: relative;
     padding-left: $padding-full !important;
     padding-right: $padding-full !important;
+    text-align: center;
 }
 
 .main > div, .preamble, aside {
@@ -60,7 +64,7 @@ aside {
     z-index: 10;
     top: 13px;
     background-color: rgba(70, 9, 66,.95);
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px black;
     padding: $padding-mobile-aside;
     position: absolute;
     top: -1px;
@@ -89,7 +93,7 @@ aside:after {
     height: 60px;
     right: 330px;
     position: absolute;
-    top: 150px;
+    top: 90px;
     width: 45px;
     border-left: 1px solid white;
     border-radius: 5px;
@@ -111,7 +115,6 @@ p {
 /* FOOTER */
 
 footer{
-    margin: 2vw;
     background-color: $footer;
     padding: $padding-mobile;
     text-align: center;
