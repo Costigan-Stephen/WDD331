@@ -4,10 +4,15 @@
 //     background-image: linear-gradient($dark-purple, $med-purple, $purple, $red, $orange);
 // }
 
+html{
+  max-width: 99vw;
+}
+
 section {
     min-height: 700px;
     background-color: $purple;
     background-image: linear-gradient($darkest-purple, $dark-purple, $med-purple, $purple, $red, $orange);
+    padding-bottom: 30px;
     color: white;
     margin-left: -10px;
     margin-right: -10px;
@@ -16,47 +21,53 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: $body-font;
+    font-size: 13pt;
+    // overflow: hidden;
+    // overflow-x: hidden;
 }
+
+#zen-preamble.preamble{
+    position: relative;
+    background: none;
+    height:250px;
+  }
 
 @media (min-width: 1300px) {
   #zen-preamble.preamble{
-      position: relative;
-      background: none;
-      height:250px;
       padding: 0px 60% 0px 20px;
-
-
-      // margin-left: -20px;
   }
 }
 
 @media (max-width: 1300px) {
   #zen-preamble.preamble{
-      position: relative;
-      background: none;
-      height:250px;
       padding: 0px 20px 0px 20px;
-
-
-      // margin-left: -20px;
   }
 }
-
-
-
 
 .summary {
     padding-left: 66% !important;
 }
 
-header h1 {
-    font-family: $header-font;
-    font-size: 34pt;
-    margin-bottom: 0px;
-}
+header {
+  h1 {
+      background-image: url(./assets/tropical-flowers-sm.svg);
+      background-color: $color-7;
+      background-size: 550px;
+      color: $color-8;
+      font-family: $header-font;
+      font-size: 30pt;
+      margin-bottom: 0px;
+      padding-right: 50px;
+      margin-left: -30px;
+      margin-right: -30px;
+  }
 
-header h2 {
-    font-family: $body-font;
+   h2 {
+     margin-top: -5px;
+     margin-bottom: -10px;
+      font-family: $body-font;
+  }
 }
 
 h3 {
