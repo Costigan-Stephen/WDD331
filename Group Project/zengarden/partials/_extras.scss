@@ -9,6 +9,7 @@
   top: 350px;
   right: 0px;
   background-image: url("./assets/palmTreeRight.svg");
+  animation: shakeRight 5.5s infinite;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -27,13 +28,13 @@
 
 /* Can be used for the grass */
 section:before {
-  z-index: 101;
+  z-index: 100;
   background-color:  $color-7;
   content: "can be used as grass";
   height: 60px;
   position: absolute;
   top: 680px;
-  width: 110%;
+  width: $body-width;
   overflow: hidden;
 }
 
@@ -46,10 +47,10 @@ section:before {
       width: 300px;
       position: absolute;
       top: 350px;
-      left: 0px;
+      left:-5px;
       background-image: url("./assets/palmTreeRight.svg");
       transform: scaleX(-1);
-      // background-image: url("./assets/palmTreeLeft.svg");
+      animation: shakeLeft 5s infinite;
       background-repeat: no-repeat;
       background-size: contain;
   }
@@ -93,14 +94,15 @@ section:before {
   background: url(./assets/waves-light.svg);
   position: absolute;
   top: 630px;
-  left: -35px;
+  left: -11px;
+  // left: 0px;
   z-index: 8;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
-  width: 2000px;
+  width: $body-width;
   animation: lightwaves 4s infinite;
-  overflow: hidden;
+  // overflow: hidden;
   // overflow-x: hidden;
 }
 
@@ -113,21 +115,35 @@ section:before {
   background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
-  width: 2000px;
+  width: $body-width;
   animation: darkwaves 3s infinite;
-  overflow: hidden;
+  // overflow-y: hidden;
+  // overflow-x: hidden;
 }
 
 @keyframes lightwaves {
     0%,100% { transform: translate(0,0); }
-    25%     { transform: translate(5px,5px); transform: scale(1.05); }
-    50%     { transform: translate(25px, 5px); }
-    75%     { transform: translate(12px,10px); transform: scale(1.05); }
+    25%     { transform: translate(0,5px);}
+    50%     { transform: translate(0, 5px); }
+    75%     { transform: translate(0,10px); }
 }
 
 @keyframes darkwaves {
     0%,100% { transform: translate(0,0); }
-    30%     { transform: translate(-25px, -5px); transform: scale(1.02); }
-    60%     { transform: translate(12px,10px); }
-    80%     { transform: translate(-5px,-5px); }
+    30%     { transform: translate(0, -5px); }
+    60%     { transform: translate(0,10px); }
+    80%     { transform: translate(0,-5px); }
+}
+@keyframes shakeRight {
+    0%,100% { transform: rotate(0); }
+    25%     { transform: rotate(-1deg);}
+    50%     { transform: rotate(1deg);}
+    75%     { transform: rotate(-1deg);}
+}
+
+@keyframes shakeLeft {
+    0%,100% { transform: rotate(0) scaleX(-1); }
+    25%     { transform: rotate(-1deg) scaleX(-1);}
+    50%     { transform: rotate(1deg) scaleX(-1);}
+    75%     { transform: rotate(-1deg) scaleX(-1);}
 }

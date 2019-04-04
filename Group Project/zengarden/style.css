@@ -6,10 +6,15 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* Layout */
 /* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Lato|Rock+Salt");
+html {
+  max-width: 99vw; }
+
 section {
   min-height: 700px;
   background-color: #811d5e;
   background-image: linear-gradient(#12001e, #460942, #5f0538, #811d5e, #fd2f24, #ff6f01);
+  padding-bottom: 30px;
   color: white;
   margin-left: -10px;
   margin-right: -10px;
@@ -17,29 +22,38 @@ section {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-size: 13pt; }
+
+#zen-preamble.preamble {
+  position: relative;
+  background: none;
+  height: 250px; }
 
 @media (min-width: 1300px) {
   #zen-preamble.preamble {
-    position: relative;
-    background: none;
-    height: 250px;
     padding: 0px 60% 0px 20px; } }
 @media (max-width: 1300px) {
   #zen-preamble.preamble {
-    position: relative;
-    background: none;
-    height: 250px;
     padding: 0px 20px 0px 20px; } }
 .summary {
   padding-left: 66% !important; }
 
 header h1 {
+  background-image: url(./assets/tropical-flowers-sm.svg);
+  background-color: #142816;
+  background-size: 550px;
+  color: #63a56a;
   font-family: "Rock Salt", serif;
-  font-size: 34pt;
-  margin-bottom: 0px; }
-
+  font-size: 30pt;
+  margin-bottom: 0px;
+  padding-right: 50px;
+  margin-left: -30px;
+  margin-right: -30px; }
 header h2 {
+  margin-top: -5px;
+  margin-bottom: -10px;
   font-family: "Lato", sans-serif; }
 
 h3 {
@@ -217,6 +231,7 @@ footer a:link, footer a:visited {
     height: 110px;
     } */
 aside {
+  margin-right: -10px;
   z-index: 50; }
 
 aside h3 {
@@ -245,18 +260,19 @@ aside ul {
   top: 350px;
   right: 0px;
   background-image: url("./assets/palmTreeRight.svg");
+  animation: shakeRight 5.5s infinite;
   background-repeat: no-repeat;
   background-size: contain; }
 
 /* Can be used for the grass */
 section:before {
-  z-index: 101;
+  z-index: 100;
   background-color: #142816;
   content: "can be used as grass";
   height: 60px;
   position: absolute;
   top: 680px;
-  width: 110%;
+  width: 100vw;
   overflow: hidden; }
 
 @media (min-width: 700px) {
@@ -267,9 +283,10 @@ section:before {
     width: 300px;
     position: absolute;
     top: 350px;
-    left: 0px;
+    left: -5px;
     background-image: url("./assets/palmTreeRight.svg");
     transform: scaleX(-1);
+    animation: shakeLeft 5s infinite;
     background-repeat: no-repeat;
     background-size: contain; }
 
@@ -295,14 +312,13 @@ section:before {
   background: url(./assets/waves-light.svg);
   position: absolute;
   top: 630px;
-  left: -35px;
+  left: -11px;
   z-index: 8;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
-  width: 2000px;
-  animation: lightwaves 4s infinite;
-  overflow: hidden; }
+  width: 100vw;
+  animation: lightwaves 4s infinite; }
 
 .extra4 {
   background: url(./assets/waves-dark.svg);
@@ -313,31 +329,45 @@ section:before {
   background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
-  width: 2000px;
-  animation: darkwaves 3s infinite;
-  overflow: hidden; }
+  width: 100vw;
+  animation: darkwaves 3s infinite; }
 
 @keyframes lightwaves {
   0%,100% {
     transform: translate(0, 0); }
   25% {
-    transform: translate(5px, 5px);
-    transform: scale(1.05); }
+    transform: translate(0, 5px); }
   50% {
-    transform: translate(25px, 5px); }
+    transform: translate(0, 5px); }
   75% {
-    transform: translate(12px, 10px);
-    transform: scale(1.05); } }
+    transform: translate(0, 10px); } }
 @keyframes darkwaves {
   0%,100% {
     transform: translate(0, 0); }
   30% {
-    transform: translate(-25px, -5px);
-    transform: scale(1.02); }
+    transform: translate(0, -5px); }
   60% {
-    transform: translate(12px, 10px); }
+    transform: translate(0, 10px); }
   80% {
-    transform: translate(-5px, -5px); } }
+    transform: translate(0, -5px); } }
+@keyframes shakeRight {
+  0%,100% {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(-1deg); }
+  50% {
+    transform: rotate(1deg); }
+  75% {
+    transform: rotate(-1deg); } }
+@keyframes shakeLeft {
+  0%,100% {
+    transform: rotate(0) scaleX(-1); }
+  25% {
+    transform: rotate(-1deg) scaleX(-1); }
+  50% {
+    transform: rotate(1deg) scaleX(-1); }
+  75% {
+    transform: rotate(-1deg) scaleX(-1); } }
 @media (max-width: 700px) {
   html {
     background-image: url(./assets/tropical-flowers-sm.svg);
@@ -442,10 +472,13 @@ section:before {
     background-image: url(./assets/tropical-flowers-sm.svg);
     background-color: #142816;
     color: #63a56a;
-    margin: 0;
-    width: 100%;
+    margin: 0 -5px 0 0;
+    padding-right: 0;
+    width: 100vw;
     min-height: calc(100vh - 70px);
     padding-bottom: 3.5vw; }
+    html h1, html h2, html h3 {
+      font-family: "Rock Salt", serif; }
 
   a {
     text-decoration: underline;
@@ -478,7 +511,7 @@ section:before {
 
   .intro header,
   .intro .summary {
-    padding: 0.5vw 2.5vw; }
+    padding: 0 2.5vw; }
     .intro header h1,
     .intro header h2,
     .intro .summary h1,
@@ -523,7 +556,7 @@ section:before {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     padding: 20px; }
     footer a {
