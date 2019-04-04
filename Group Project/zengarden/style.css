@@ -8,7 +8,7 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css?family=Lato|Rock+Salt");
 html {
-  max-width: 99vw; }
+  max-width: 100vw; }
 
 section {
   min-height: 700px;
@@ -272,6 +272,8 @@ section:before {
   height: 60px;
   position: absolute;
   top: 680px;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   overflow: hidden; }
 
@@ -558,7 +560,7 @@ section:before {
     left: 0;
     width: 100vw;
     text-align: center;
-    padding: 20px; }
+    padding: 20px 0; }
     footer a {
       text-decoration: none;
       color: #63a56a;
