@@ -3,21 +3,17 @@ $padding-full-sides: 2.5vw;
 $padding-mobile: 2vw;
 $padding-mobile-aside: 3vw;
 $padding-articles: 20px;
-$background-header:#811d5e;
+
 $aside-top: 200px;
 $aside-left: 200px;
-$dark-purple: #460942;
-$med-purple: #5f0538;
-$purple: #811d5e;
-$red: #fd2f24;
-$orange: #ff6f01;
-$yellow: #fed800;
-$background-article: white;
-$footer: #999;
 
-$body-width: 100%;
+$background-article: white;
+
+
+$body-width: 100vw;
 $background-aside: white;
 
 /* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lato|Rock+Salt');
 $header-font:"Rock Salt", serif;
 $body-font: "Lato", sans-serif;
