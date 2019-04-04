@@ -18,15 +18,32 @@ section {
     background-size: cover;
 }
 
+@media (min-width: 1300px) {
+  #zen-preamble.preamble{
+      position: relative;
+      background: none;
+      height:250px;
+      padding: 0px 60% 0px 20px;
 
-#zen-preamble.preamble{
-    position: relative;
-    background: none;
-    height:250px;
-    padding: 0px 60% 80px 20px;
 
-    // margin-left: -20px;
+      // margin-left: -20px;
+  }
 }
+
+@media (max-width: 1300px) {
+  #zen-preamble.preamble{
+      position: relative;
+      background: none;
+      height:250px;
+      padding: 0px 20px 0px 20px;
+
+
+      // margin-left: -20px;
+  }
+}
+
+
+
 
 .summary {
     padding-left: 66% !important;

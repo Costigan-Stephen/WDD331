@@ -45,7 +45,7 @@ header{
 }
 
 #zen-preamble.preamble, .summary {
-    z-index: 4;
+    z-index: 10;
     position: relative;
     padding-left: $padding-full !important;
     padding-right: $padding-full !important;
@@ -60,13 +60,21 @@ header{
 }
 /* ASIDE */
 
+section:before {
+  z-index: 14;
+}
+
+#zen-preamble.preamble{
+  
+}
+
 aside {
-    z-index: 10;
+    z-index: 15;
     top: 13px;
     background-color: rgba(70, 9, 66,.95);
     box-shadow: 3px 3px 3px black;
     padding: $padding-mobile-aside;
-    position: absolute;
+    position: fixed;
     top: -1px;
     right: -340px;
     color: white;

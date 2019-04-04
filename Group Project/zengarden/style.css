@@ -19,12 +19,18 @@ section {
   background-repeat: no-repeat;
   background-size: cover; }
 
-#zen-preamble.preamble {
-  position: relative;
-  background: none;
-  height: 250px;
-  padding: 0px 60% 80px 20px; }
-
+@media (min-width: 1300px) {
+  #zen-preamble.preamble {
+    position: relative;
+    background: none;
+    height: 250px;
+    padding: 0px 60% 0px 20px; } }
+@media (max-width: 1300px) {
+  #zen-preamble.preamble {
+    position: relative;
+    background: none;
+    height: 250px;
+    padding: 0px 20px 0px 20px; } }
 .summary {
   padding-left: 66% !important; }
 
@@ -43,196 +49,6 @@ h3 {
 p, a {
   font-family: "Lato", sans-serif; }
 
-@media (max-width: 700px) {
-  html {
-    background-image: url(./assets/tropical-flowers-sm.svg);
-    display: grid;
-    background-color: #142816;
-    color: #63a56a; }
-
-  body {
-    grid-row-gap: 1.2vw; }
-
-  a {
-    text-decoration: underline;
-    color: inherit; }
-
-  /* HAEADER */
-  header {
-    margin-top: -50px;
-    padding: 0 2vw; }
-    header h1, header h2, header p {
-      text-align: center; }
-    header h2 {
-      margin-bottom: 0px; }
-
-  .intro {
-    padding: 2vw; }
-
-  .intro header, .intro .summary {
-    text-align: center; }
-    .intro header p:first-of-type, .intro .summary p:first-of-type {
-      z-index: 3;
-      margin-top: 0px;
-      padding-top: 10px; }
-
-  #zen-preamble.preamble, .summary {
-    z-index: 4;
-    position: relative;
-    padding-left: 0.5vw !important;
-    padding-right: 0.5vw !important;
-    text-align: center; }
-
-  .main > div, .preamble, aside {
-    margin: 2vw;
-    padding: 0 2vw 20px 2vw; }
-
-  /* ASIDE */
-  aside {
-    z-index: 10;
-    top: 13px;
-    background-color: rgba(70, 9, 66, 0.95);
-    box-shadow: 3px 3px 3px black;
-    padding: 3vw;
-    position: absolute;
-    top: -1px;
-    right: -340px;
-    color: white;
-    transition: .5s ease-in-out;
-    margin: 0px;
-    width: 300px; }
-
-  aside:hover {
-    right: 0px; }
-
-  aside:hover:after {
-    background-image: url(./assets/aside-arrow-right.png); }
-
-  aside:after {
-    z-index: 10;
-    background-color: #460942;
-    background-image: url(./assets/aside-arrow-left.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    height: 60px;
-    right: 330px;
-    position: absolute;
-    top: 90px;
-    width: 45px;
-    border-left: 1px solid white;
-    border-radius: 5px;
-    transition: .5s ease-in-out; }
-
-  aside a {
-    color: #ffffffa5; }
-
-  aside a {
-    color: #ff6f01; }
-
-  p {
-    z-index: 3; }
-
-  /* FOOTER */
-  footer {
-    background-color: #041105;
-    padding: 2vw;
-    text-align: center;
-    grid-area: foot; } }
-@media (min-width: 700px) {
-  html {
-    background-image: url(./assets/tropical-flowers-sm.svg);
-    background-color: #142816;
-    color: #63a56a;
-    margin: 0;
-    width: 100%;
-    min-height: calc(100vh - 70px);
-    padding-bottom: 3.5vw; }
-
-  a {
-    text-decoration: underline;
-    color: inherit; }
-
-  .main > div, .preamble, aside {
-    padding: 20px; }
-
-  .page-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side"; }
-
-  #zen-supporting {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
-    grid-area: bodya;
-    background-image: url(./assets/tropical-flowers-sm.svg);
-    z-index: 100;
-    background-color: #142816; }
-
-  #zen-intro {
-    grid-area: topa; }
-
-  h3.select, #zen-supporting {
-    padding-top: 30px; }
-
-  .intro header,
-  .intro .summary {
-    padding: 0.5vw 2.5vw; }
-    .intro header h1,
-    .intro header h2,
-    .intro .summary h1,
-    .intro .summary h2 {
-      text-align: right; }
-    .intro header p:first-of-type,
-    .intro .summary p:first-of-type {
-      padding-top: 0px; }
-
-  .preamble {
-    z-index: 12;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: one;
-    grid-area: bodya; }
-
-  .intro header,
-  .intro .summary {
-    text-align: right; }
-
-  .main > :nth-child(1),
-  .preamble {
-    grid-area: one; }
-
-  .main > :nth-child(2),
-  .preamble {
-    grid-area: two; }
-
-  .main > :nth-child(3) {
-    grid-area: three; }
-
-  .main > :nth-child(4) {
-    grid-area: four; }
-
-  aside {
-    background-color: #041105;
-    grid-area: side; }
-
-  footer {
-    z-index: 500;
-    padding: 0.5vw 2.5vw;
-    background: #041105;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px; }
-    footer a {
-      text-decoration: none;
-      color: #63a56a;
-      padding: 0 10px;
-      text-transform: uppercase; } }
 /* basic elements 
 html {
     margin: 0;
@@ -422,7 +238,7 @@ aside ul {
 
 /* Extra #1 Plam Tree Right */
 .extra1 {
-  z-index: 11;
+  z-index: 9;
   height: 500px;
   width: 300px;
   position: absolute;
@@ -444,7 +260,7 @@ section:before {
   overflow: hidden; }
 
 @media (min-width: 700px) {
-  /* Extra #1 Plam Tree Right */
+  /* Extra #2 Plam Tree Left */
   .extra2 {
     z-index: 11;
     height: 500px;
@@ -480,11 +296,11 @@ section:before {
   position: absolute;
   top: 630px;
   left: -35px;
-  z-index: 9;
+  z-index: 8;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
-  width: 110%;
+  width: 2000px;
   animation: lightwaves 4s infinite;
   overflow: hidden; }
 
@@ -497,7 +313,7 @@ section:before {
   background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
-  width: 110%;
+  width: 2000px;
   animation: darkwaves 3s infinite;
   overflow: hidden; }
 
@@ -522,35 +338,198 @@ section:before {
     transform: translate(12px, 10px); }
   80% {
     transform: translate(-5px, -5px); } }
-@media (max-width: 1738px) {
-  .extra3 {
-    top: 840px; }
+@media (max-width: 700px) {
+  html {
+    background-image: url(./assets/tropical-flowers-sm.svg);
+    display: grid;
+    background-color: #142816;
+    color: #63a56a; }
 
-  .extra4 {
-    top: 820px; } }
-@media (max-width: 1562px) {
-  .extra3 {
-    top: 880px; }
+  body {
+    grid-row-gap: 1.2vw; }
 
-  .extra4 {
-    top: 860px; } }
-@media (max-width: 1407px) {
-  .extra3 {
-    top: 920px; }
+  a {
+    text-decoration: underline;
+    color: inherit; }
 
-  .extra4 {
-    top: 900px; } }
-@media (max-width: 1223px) {
-  .extra3 {
-    top: 960px; }
+  /* HAEADER */
+  header {
+    margin-top: -50px;
+    padding: 0 2vw; }
+    header h1, header h2, header p {
+      text-align: center; }
+    header h2 {
+      margin-bottom: 0px; }
 
-  .extra4 {
-    top: 940px; } }
-@media (max-width: 1000px) {
-  .extra3 {
-    display: none; }
+  .intro {
+    padding: 2vw; }
 
-  .extra4 {
-    display: none; } }
+  .intro header, .intro .summary {
+    text-align: center; }
+    .intro header p:first-of-type, .intro .summary p:first-of-type {
+      z-index: 3;
+      margin-top: 0px;
+      padding-top: 10px; }
+
+  #zen-preamble.preamble, .summary {
+    z-index: 10;
+    position: relative;
+    padding-left: 0.5vw !important;
+    padding-right: 0.5vw !important;
+    text-align: center; }
+
+  .main > div, .preamble, aside {
+    margin: 2vw;
+    padding: 0 2vw 20px 2vw; }
+
+  /* ASIDE */
+  section:before {
+    z-index: 14; }
+
+  aside {
+    z-index: 15;
+    top: 13px;
+    background-color: rgba(70, 9, 66, 0.95);
+    box-shadow: 3px 3px 3px black;
+    padding: 3vw;
+    position: fixed;
+    top: -1px;
+    right: -340px;
+    color: white;
+    transition: .5s ease-in-out;
+    margin: 0px;
+    width: 300px; }
+
+  aside:hover {
+    right: 0px; }
+
+  aside:hover:after {
+    background-image: url(./assets/aside-arrow-right.png); }
+
+  aside:after {
+    z-index: 10;
+    background-color: #460942;
+    background-image: url(./assets/aside-arrow-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 60px;
+    right: 330px;
+    position: absolute;
+    top: 90px;
+    width: 45px;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    transition: .5s ease-in-out; }
+
+  aside a {
+    color: #ffffffa5; }
+
+  aside a {
+    color: #ff6f01; }
+
+  p {
+    z-index: 3; }
+
+  /* FOOTER */
+  footer {
+    background-color: #041105;
+    padding: 2vw;
+    text-align: center;
+    grid-area: foot; } }
+@media (min-width: 700px) {
+  html {
+    background-image: url(./assets/tropical-flowers-sm.svg);
+    background-color: #142816;
+    color: #63a56a;
+    margin: 0;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding-bottom: 3.5vw; }
+
+  a {
+    text-decoration: underline;
+    color: inherit; }
+
+  .main > div, .preamble, aside {
+    padding: 20px; }
+
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "topa topa topa" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side" "bodya bodya side"; }
+
+  #zen-supporting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
+    grid-area: bodya;
+    background-image: url(./assets/tropical-flowers-sm.svg);
+    z-index: 100;
+    background-color: #142816; }
+
+  #zen-intro {
+    grid-area: topa; }
+
+  h3.select, #zen-supporting {
+    padding-top: 30px; }
+
+  .intro header,
+  .intro .summary {
+    padding: 0.5vw 2.5vw; }
+    .intro header h1,
+    .intro header h2,
+    .intro .summary h1,
+    .intro .summary h2 {
+      text-align: right; }
+    .intro header p:first-of-type,
+    .intro .summary p:first-of-type {
+      padding-top: 0px; }
+
+  .preamble {
+    z-index: 12;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: one;
+    grid-area: bodya; }
+
+  .intro header,
+  .intro .summary {
+    text-align: right; }
+
+  .main > :nth-child(1),
+  .preamble {
+    grid-area: one; }
+
+  .main > :nth-child(2),
+  .preamble {
+    grid-area: two; }
+
+  .main > :nth-child(3) {
+    grid-area: three; }
+
+  .main > :nth-child(4) {
+    grid-area: four; }
+
+  aside {
+    background-color: #041105;
+    grid-area: side; }
+
+  footer {
+    z-index: 500;
+    padding: 0.5vw 2.5vw;
+    background: #041105;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px; }
+    footer a {
+      text-decoration: none;
+      color: #63a56a;
+      padding: 0 10px;
+      text-transform: uppercase; } }
 
 /*# sourceMappingURL=style.css.map */

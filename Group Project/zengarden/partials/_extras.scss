@@ -2,7 +2,7 @@
 
 /* Extra #1 Plam Tree Right */
 .extra1 {
-  z-index: 11;
+  z-index: 9;
   height: 500px;
   width: 300px;
   position: absolute;
@@ -39,7 +39,7 @@ section:before {
 
 @media (min-width: 700px) {
 
-  /* Extra #1 Plam Tree Right */
+  /* Extra #2 Plam Tree Left */
   .extra2 {
       z-index: 11;
       height: 500px;
@@ -94,13 +94,14 @@ section:before {
   position: absolute;
   top: 630px;
   left: -35px;
-  z-index: 9;
+  z-index: 8;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
-  width: 110%;
+  width: 2000px;
   animation: lightwaves 4s infinite;
   overflow: hidden;
+  // overflow-x: hidden;
 }
 
 .extra4 { //BACK WAVE
@@ -112,7 +113,7 @@ section:before {
   background-repeat: no-repeat;
   background-size: contain;
   height: 120px;
-  width: 110%;
+  width: 2000px;
   animation: darkwaves 3s infinite;
   overflow: hidden;
 }
@@ -129,47 +130,4 @@ section:before {
     30%     { transform: translate(-25px, -5px); transform: scale(1.02); }
     60%     { transform: translate(12px,10px); }
     80%     { transform: translate(-5px,-5px); }
-}
-
-@media (max-width: 1738px){
-  .extra3{
-    top:840px;
-  }
-  .extra4{
-    top:820px;
-  }
-}
-
-@media (max-width: 1562px){
-  .extra3{
-    top:880px;
-  }
-  .extra4{
-    top:860px;
-  }
-}
-@media (max-width: 1407px){
-  .extra3{
-    top:920px;
-  }
-  .extra4{
-    top:900px;
-  }
-}
-@media (max-width: 1223px){
-  .extra3{
-    top:960px;
-  }
-  .extra4{
-    top:940px;
-  }
-}
-
-@media (max-width: 1000px){
-  .extra3{
-    display: none;
-  }
-  .extra4{
-    display: none;
-  }
 }
