@@ -82,10 +82,6 @@ h3.select, #zen-supporting{
     grid-area: bodya;
 }
 
-.main > div,
-.preamble,
-aside {}
-
 .intro header,
 .intro .summary {
     text-align: right;
@@ -123,7 +119,7 @@ footer {
    left: 0;
    width: $body-width;
    text-align: center;
-   padding: 20px;
+   padding: 20px 0;
    a{
      text-decoration: none;
      color: $color-8;
