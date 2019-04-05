@@ -14,31 +14,47 @@
   background-size: contain;
 }
 
-// //grass - WORK IN PROGRESS
-// .extra5 {
-//   z-index: 101;
-//   background-color:  $color-7;
-//   content: "can be used as grass";
-//   height: 60px;
-//   position: absolute;
-//   top: 600px;
-//   width: 110%;
-//   overflow: hidden;
-// }
-
-
-/* Can be used for the grass */
-section:before {
-  z-index: 100;
-  background-color:  $color-7;
-  content: "can be used as grass";
+// Coast
+.extra5 {
+  z-index: 13;
+  background-image: url("./assets/coast.svg");
+  content: "";
   height: 60px;
+  position: absolute;
+  top: 650px;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  width: $body-width;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+section:before {
+  z-index: 15;
+  background-image: url("./assets/grassback.svg");
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 660px;
+  padding: 0;
+  margin: 0;
+  width: $body-width;
+  background-repeat: repeat;
+  background-size: contain;
+}
+section:after {
+  z-index: 15;
+  background-image: url("./assets/grassfront.svg");
+  content: "";
+  height:60px;
   position: absolute;
   top: 680px;
   padding: 0;
   margin: 0;
   width: $body-width;
-  overflow: hidden;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 @media (min-width: 700px) {
@@ -92,7 +108,7 @@ section:before {
 .extra4 { //BACK WAVE
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
-  top: 580px;
+  top: 590px;
   left: -10px;
   z-index: 7;
   background-repeat: no-repeat;

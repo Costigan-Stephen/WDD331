@@ -39,7 +39,7 @@ section p, section h1, section h2, section h3 {
 
 @media (min-width: 1300px) {
   #zen-preamble.preamble {
-    padding: 0px 60% 0px 20px;
+    padding: 0px 60% 20px 20px;
   }
 }
 @media (max-width: 1300px) {
@@ -283,18 +283,47 @@ aside ul {
   background-size: contain;
 }
 
-/* Can be used for the grass */
+.extra5 {
+  z-index: 13;
+  background-image: url("./assets/coast.svg");
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 650px;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  width: 100vw;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
 section:before {
-  z-index: 100;
-  background-color: #142816;
-  content: "can be used as grass";
+  z-index: 15;
+  background-image: url("./assets/grassback.svg");
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 660px;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+section:after {
+  z-index: 15;
+  background-image: url("./assets/grassfront.svg");
+  content: "";
   height: 60px;
   position: absolute;
   top: 680px;
   padding: 0;
   margin: 0;
   width: 100vw;
-  overflow: hidden;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 @media (min-width: 700px) {
@@ -345,7 +374,7 @@ section:before {
 .extra4 {
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
-  top: 580px;
+  top: 590px;
   left: -10px;
   z-index: 7;
   background-repeat: no-repeat;
@@ -450,16 +479,12 @@ section:before {
   header {
     margin-top: -50px;
     padding: 0 2vw;
-    text-align: center;
   }
-  header h1 {
-    font-size: 24pt;
+  header h1, header h2, header p {
+    text-align: center;
   }
   header h2 {
     margin-bottom: 0px;
-  }
-  header h3 {
-    font-size: 14pt;
   }
 
   .intro {
@@ -481,10 +506,6 @@ section:before {
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
     text-align: center;
-  }
-
-  #zen-supporting {
-    z-index: 100;
   }
 
   .main > div, .preamble, aside {
@@ -511,12 +532,15 @@ section:before {
     margin: 0px;
     width: 300px;
   }
+
   aside:hover {
     right: 0px;
   }
+
   aside:hover:after {
     background-image: url(./assets/aside-arrow-right.png);
   }
+
   aside:after {
     z-index: 10;
     background-color: #460942;
@@ -533,6 +557,11 @@ section:before {
     border-radius: 5px;
     transition: 0.5s ease-in-out;
   }
+
+  aside a {
+    color: #ffffffa5;
+  }
+
   aside a {
     color: #ff6f01;
   }
@@ -586,7 +615,7 @@ section:before {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
     grid-area: bodya;
-    background-image: url(./assets/tropical-flowers-sm.svg);
+    background-image: url(./assets/tropical-flowers.svg);
     z-index: 100;
     background-color: #142816;
   }
@@ -619,6 +648,8 @@ section:before {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
     grid-area: bodya;
+    grid-area: one;
+    margin: 10px;
   }
 
   .intro header,
@@ -626,26 +657,34 @@ section:before {
     text-align: right;
   }
 
-  .main > :nth-child(1),
-.preamble {
+  .main > :nth-child(1) {
     grid-area: one;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px;
   }
 
   .main > :nth-child(2),
 .preamble {
     grid-area: two;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px;
   }
 
   .main > :nth-child(3) {
     grid-area: three;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px;
   }
 
   .main > :nth-child(4) {
     grid-area: four;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px;
   }
 
   aside {
     background-color: #041105;
+    background-color: rgba(4, 17, 5, 0.8);
     grid-area: side;
   }
 

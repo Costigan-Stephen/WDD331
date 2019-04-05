@@ -24,7 +24,6 @@ a{
 }
 
 .page-wrapper {
-
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
@@ -48,7 +47,7 @@ a{
         "four four"
         "foota foota";
     grid-area: bodya;
-    background-image: url(./assets/tropical-flowers-sm.svg);
+    background-image: url(./assets/tropical-flowers.svg);
     z-index: 100;
     background-color: $color-7;
 }
@@ -80,6 +79,8 @@ h3.select, #zen-supporting{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
     grid-area: bodya;
+    grid-area: one;
+    margin: 10px;
 }
 
 .intro header,
@@ -87,26 +88,34 @@ h3.select, #zen-supporting{
     text-align: right;
 }
 
-.main > :nth-child(1),
-.preamble {
+.main > :nth-child(1) {
     grid-area: one;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(2),
 .preamble {
     grid-area: two;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(3) {
     grid-area: three;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(4) {
     grid-area: four;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 aside {
   background-color: $footer;
+  background-color: rgba(4,17,5,0.8);
   grid-area: side;
 }
 
