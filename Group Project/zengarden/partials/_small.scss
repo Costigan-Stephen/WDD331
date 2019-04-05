@@ -50,13 +50,17 @@ header{
 s
 #zen-preamble.preamble, .summary {
     z-index: 10;
-
     position: relative;
     padding-left: $padding-full !important;
     padding-right: $padding-full !important;
     text-align: center;
 }
 
+
+#zen-intro {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .main > div, .preamble, aside {
     margin: 2vw;
     padding: 0 $padding-mobile 20px $padding-mobile;

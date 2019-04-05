@@ -490,6 +490,10 @@ section:after {
     padding-right: 0.5vw !important;
     text-align: center; }
 
+  #zen-intro {
+    padding-left: 24px;
+    padding-right: 24px; }
+
   .main > div, .preamble, aside {
     margin: 2vw;
     padding: 0 2vw 20px 2vw; }
