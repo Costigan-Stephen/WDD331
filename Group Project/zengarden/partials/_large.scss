@@ -4,7 +4,7 @@ html {
   color: $color-8;
   margin: 0 -5px 0 0;
   padding-right: 0;
-  width: $body-width;
+  // width: $body-width;
   min-height: calc(100vh - 70px);
   padding-bottom: $padding-full-sides*1.4;
 
@@ -63,6 +63,7 @@ h3.select, #zen-supporting{
 .intro header,
 .intro .summary {
     // background-color: $banner;
+    margin-left: -10px;
     padding: 0 $padding-full-sides;
     h1,
     h2 {
@@ -124,7 +125,8 @@ footer {
    background: $footer;
    position: fixed;
    bottom: 0;
-   left: 0;
+   margin-left: -10px;
+   margin-right: 0;
    width: $body-width;
    text-align: center;
    padding: 20px 0;
