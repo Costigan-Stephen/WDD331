@@ -35,7 +35,6 @@
   background-size: contain;
 }
 
-/* Grass Layers */
 section:before {
   z-index: 15;
   background-image: url("./assets/grassback.svg");
@@ -101,7 +100,7 @@ section:after {
 
 /* Water Extra 3 & 4 */
 .extra3 { //FRONT WAVE
-  background: url(./assets/waves-light.svg);
+  background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 610px;
   // left: -17px;
@@ -117,7 +116,7 @@ section:after {
 }
 
 .extra4 { //BACK WAVE
-  background: url(./assets/waves-dark.svg);
+  background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 590px;
   // left: 0px;

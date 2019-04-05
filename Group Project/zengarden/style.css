@@ -288,7 +288,6 @@ aside ul {
   background-repeat: repeat;
   background-size: contain; }
 
-/* Grass Layers */
 section:before {
   z-index: 15;
   background-image: url("./assets/grassback.svg");
@@ -347,7 +346,7 @@ section:after {
     animation: ripple 0.7s linear infinite; } }
 /* Water Extra 3 & 4 */
 .extra3 {
-  background: url(./assets/waves-light.svg);
+  background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 610px;
   margin-left: 0;
@@ -360,7 +359,7 @@ section:after {
   overflow: hidden; }
 
 .extra4 {
-  background: url(./assets/waves-dark.svg);
+  background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 590px;
   margin-left: 0;
@@ -436,14 +435,11 @@ section:after {
   /* HAEADER */
   header {
     margin-top: -50px;
-    padding: 0 2vw;
-    text-align: center; }
-    header h1 {
-      font-size: 24pt; }
+    padding: 0 2vw; }
+    header h1, header h2, header p {
+      text-align: center; }
     header h2 {
       margin-bottom: 0px; }
-    header h3 {
-      font-size: 14pt; }
 
   .intro {
     padding: 2vw; }
@@ -461,9 +457,6 @@ section:after {
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
     text-align: center; }
-
-  #zen-supporting {
-    z-index: 100; }
 
   .main > div, .preamble, aside {
     margin: 2vw;
@@ -486,27 +479,34 @@ section:after {
     transition: .5s ease-in-out;
     margin: 0px;
     width: 300px; }
-    aside:hover {
-      right: 0px; }
-      aside:hover:after {
-        background-image: url(./assets/aside-arrow-right.png); }
-    aside:after {
-      z-index: 10;
-      background-color: #460942;
-      background-image: url(./assets/aside-arrow-left.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      content: "";
-      height: 60px;
-      right: 330px;
-      position: absolute;
-      top: 90px;
-      width: 45px;
-      border-left: 1px solid white;
-      border-radius: 5px;
-      transition: .5s ease-in-out; }
-    aside a {
-      color: #ff6f01; }
+
+  aside:hover {
+    right: 0px; }
+
+  aside:hover:after {
+    background-image: url(./assets/aside-arrow-right.png); }
+
+  aside:after {
+    z-index: 10;
+    background-color: #460942;
+    background-image: url(./assets/aside-arrow-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 60px;
+    right: 330px;
+    position: absolute;
+    top: 90px;
+    width: 45px;
+    border-left: 1px solid white;
+    border-radius: 5px;
+    transition: .5s ease-in-out; }
+
+  aside a {
+    color: #ffffffa5; }
+
+  aside a {
+    color: #ff6f01; }
 
   p {
     z-index: 3; }
@@ -548,7 +548,7 @@ section:after {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: ". one" "two ." ". three" "four four" "foota foota";
     grid-area: bodya;
-    background-image: url(./assets/tropical-flowers-sm.svg);
+    background-image: url(./assets/tropical-flowers.svg);
     z-index: 100;
     background-color: #142816; }
 
@@ -575,14 +575,15 @@ section:after {
     z-index: 12;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: one;
-    grid-area: bodya; }
+    grid-area: bodya;
+    grid-area: one;
+    margin: 10px; }
 
   .intro header,
   .intro .summary {
     text-align: right; }
 
-  .main > :nth-child(1),
-  .preamble {
+  .main > :nth-child(1) {
     grid-area: one;
     background-color: rgba(4, 17, 5, 0.5);
     margin: 10px; }
