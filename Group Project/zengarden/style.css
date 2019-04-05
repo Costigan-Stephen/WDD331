@@ -265,16 +265,30 @@ aside ul {
 
 /* Can be used for the grass */
 section:before {
-  z-index: 100;
-  background-color: #142816;
-  content: "can be used as grass";
+  z-index: 15;
+  background-image: url("./assets/coast.svg");
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 660px;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background-repeat: repeat;
+  background-size: contain; }
+
+section:after {
+  z-index: 15;
+  background-image: url("./assets/grass.svg");
+  content: "";
   height: 60px;
   position: absolute;
   top: 680px;
   padding: 0;
   margin: 0;
   width: 100vw;
-  overflow: hidden; }
+  background-repeat: repeat;
+  background-size: contain; }
 
 @media (min-width: 700px) {
   /* Extra #2 Plam Tree Left */
