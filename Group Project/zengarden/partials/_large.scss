@@ -24,7 +24,6 @@ a{
 }
 
 .page-wrapper {
-
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto;
@@ -90,23 +89,32 @@ h3.select, #zen-supporting{
 .main > :nth-child(1),
 .preamble {
     grid-area: one;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(2),
 .preamble {
     grid-area: two;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(3) {
     grid-area: three;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 .main > :nth-child(4) {
     grid-area: four;
+    background-color: rgba(4,17,5,0.5);
+    margin: 10px;
 }
 
 aside {
   background-color: $footer;
+  background-color: rgba(4,17,5,0.8);
   grid-area: side;
 }
 

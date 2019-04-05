@@ -35,7 +35,8 @@ section {
 
 @media (min-width: 1300px) {
   #zen-preamble.preamble {
-    padding: 0px 60% 0px 20px; } }
+    background-color: rgba(4, 17, 5, 0.5);
+    padding: 0px 60% 20px 20px; } }
 @media (max-width: 1300px) {
   #zen-preamble.preamble {
     padding: 0px 20px 0px 20px; } }
@@ -569,20 +570,29 @@ section:after {
 
   .main > :nth-child(1),
   .preamble {
-    grid-area: one; }
+    grid-area: one;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px; }
 
   .main > :nth-child(2),
   .preamble {
-    grid-area: two; }
+    grid-area: two;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px; }
 
   .main > :nth-child(3) {
-    grid-area: three; }
+    grid-area: three;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px; }
 
   .main > :nth-child(4) {
-    grid-area: four; }
+    grid-area: four;
+    background-color: rgba(4, 17, 5, 0.5);
+    margin: 10px; }
 
   aside {
     background-color: #041105;
+    background-color: rgba(4, 17, 5, 0.8);
     grid-area: side; }
 
   footer {
