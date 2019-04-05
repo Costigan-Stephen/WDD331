@@ -12,7 +12,7 @@
   height: 500px;
   width: 300px;
   position: absolute;
-  top: 350px;
+  top: 450px;
   right: -30px;
   background-image: url("./assets/palmTreeRight.svg");
   animation: shakeRight 5.5s infinite;
@@ -27,7 +27,7 @@
   content: "";
   height: 60px;
   position: absolute;
-  top: 650px;
+  top: 750px;
   padding: 0;
   margin: 0;
   width: $body-width;
@@ -41,7 +41,7 @@ section:before {
   content: "";
   height: 60px;
   position: absolute;
-  top: 660px;
+  top: 760px;
   margin-left: 0px;
   padding: 0;
   margin: 0;
@@ -56,7 +56,7 @@ section:after {
   content: "";
   height:60px;
   position: absolute;
-  top: 680px;
+  top: 780px;
   padding: 0;
   margin: 0;
   width: $body-width;
@@ -73,7 +73,7 @@ section:after {
       height: 500px;
       width: 300px;
       position: absolute;
-      top: 350px;
+      top: 450px;
       left:-5px;
       background-image: url("./assets/palmTreeRight.svg");
       transform: scaleX(-1);
@@ -102,7 +102,7 @@ section:after {
 .extra3 { //FRONT WAVE
   background: url(./assets/wave-light-1.svg);
   position: absolute;
-  top: 610px;
+  top: 710px;
   // left: -17px;
   margin-left: 0;
   z-index: 8;
@@ -118,7 +118,7 @@ section:after {
 .extra4 { //BACK WAVE
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
-  top: 590px;
+  top: 690px;
   // left: 0px;
   margin-left: 0;
   z-index: 7;
