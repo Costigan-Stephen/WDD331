@@ -490,6 +490,9 @@ section:after {
     padding-right: 0.5vw !important;
     text-align: center; }
 
+  #zen-supporting {
+    padding-right: 30px; }
+
   #zen-intro {
     padding-left: 24px;
     padding-right: 24px; }
