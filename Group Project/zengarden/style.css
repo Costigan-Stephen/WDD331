@@ -445,7 +445,8 @@ section:after {
     padding: 2vw; }
 
   .intro header, .intro .summary {
-    text-align: center; }
+    text-align: center;
+    margin-right: 50px; }
     .intro header p:first-of-type, .intro .summary p:first-of-type {
       z-index: 3;
       margin-top: 0px;
@@ -453,6 +454,7 @@ section:after {
 
   #zen-preamble.preamble, .summary {
     z-index: 10;
+    margin-right: 50px;
     position: relative;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
@@ -460,6 +462,7 @@ section:after {
 
   .main > div, .preamble, aside {
     margin: 2vw;
+    margin-right: 30px;
     padding: 0 2vw 20px 2vw; }
 
   /* ASIDE */
