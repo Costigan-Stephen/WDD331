@@ -26,7 +26,6 @@
   margin: 0;
   left: 0;
   width: $body-width;
-  // overflow: hidden;
   background-repeat: repeat;
   background-size: contain;
 }
@@ -110,7 +109,7 @@ section:after {
 .extra4 { //BACK WAVE
   background: url(./assets/waves-dark.svg);
   position: absolute;
-  top: 580px;
+  top: 590px;
   left: -10px;
   z-index: 7;
   background-repeat: no-repeat;
