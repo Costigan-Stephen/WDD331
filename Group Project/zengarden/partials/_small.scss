@@ -3,6 +3,8 @@ html{
     display: grid;
     background-color: $color-7;
     color: $color-8;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,6 +37,7 @@ header{
 
 .intro header, .intro .summary {
     text-align: center;
+    width: 100%;
 
 
     p:first-of-type {
@@ -56,14 +59,15 @@ s
 
 .main > div, .preamble, aside {
     margin: 2vw;
-    margin-right: 30px;
+    // margin-right: 30px;
     padding: 0 $padding-mobile 20px $padding-mobile;
     // background-color: $background-article;
 
 }
 
 section {
-  margin-left: -10px;
+  margin-left: -40px;
+  width: $body-width;
 }
 
 section:before {

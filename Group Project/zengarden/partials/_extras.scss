@@ -30,6 +30,7 @@
   top: 750px;
   padding: 0;
   margin: 0;
+  margin-left: -15px;
   width: $body-width;
   background-repeat: repeat;
   background-size: contain;
@@ -98,13 +99,19 @@ section:after {
   }
 }
 
+@media (max-width: 700px) {
+  // Coast
+  .extra5 {
+    margin-left: -15px;
+  }
+}
+
 /* Water Extra 3 & 4 */
 .extra3 { //FRONT WAVE
   background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 710px;
-  // left: -17px;
-  margin-left: 0;
+  margin-left: -15px;
   z-index: 8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,8 +126,7 @@ section:after {
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 690px;
-  // left: 0px;
-  margin-left: 0;
+  margin-left: -15px;
   z-index: 7;
   background-repeat: no-repeat;
   background-size: cover;

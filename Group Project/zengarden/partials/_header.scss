@@ -18,6 +18,7 @@ section {
     font-family: $body-font;
     font-size: 13pt;
     width: $body-width;
+    margin-left: -15px;
 
     p,
     h1,
@@ -50,7 +51,8 @@ section {
 
 @media (max-width: 800px) {
   #zen-preamble.preamble{
-      padding: 30px 30px 0px 0px;
+      padding: 30px;
+      margin-left: 15px;
       text-align: center;
       z-index: 12;
   }
