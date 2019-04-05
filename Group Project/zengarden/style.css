@@ -511,6 +511,7 @@ section:after {
 
   .intro header, .intro .summary {
     text-align: center;
+    margin-right: 50px;
   }
   .intro header p:first-of-type, .intro .summary p:first-of-type {
     z-index: 3;
@@ -521,6 +522,7 @@ section:after {
   s #zen-preamble.preamble,
 .summary {
     z-index: 10;
+    margin-right: 50px;
     position: relative;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
@@ -529,14 +531,19 @@ section:after {
 
   .main > div, .preamble, aside {
     margin: 2vw;
+    margin-right: 30px;
     padding: 0 2vw 20px 2vw;
   }
 
-  /* ASIDE */
+  section {
+    margin-left: -10px;
+  }
+
   section:before {
     z-index: 14;
   }
 
+  /* ASIDE */
   aside {
     z-index: 15;
     top: 13px;
@@ -678,26 +685,22 @@ section:after {
 
   .main > :nth-child(1) {
     grid-area: one;
-    background-color: rgba(4, 17, 5, 0.5);
     margin: 10px;
   }
 
   .main > :nth-child(2),
 .preamble {
     grid-area: two;
-    background-color: rgba(4, 17, 5, 0.5);
     margin: 10px;
   }
 
   .main > :nth-child(3) {
     grid-area: three;
-    background-color: rgba(4, 17, 5, 0.5);
     margin: 10px;
   }
 
   .main > :nth-child(4) {
     grid-area: four;
-    background-color: rgba(4, 17, 5, 0.5);
     margin: 10px;
   }
 

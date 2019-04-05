@@ -91,26 +91,22 @@ h3.select, #zen-supporting{
 
 .main > :nth-child(1) {
     grid-area: one;
-    background-color: rgba(4,17,5,0.5);
     margin: 10px;
 }
 
 .main > :nth-child(2),
 .preamble {
     grid-area: two;
-    background-color: rgba(4,17,5,0.5);
     margin: 10px;
 }
 
 .main > :nth-child(3) {
     grid-area: three;
-    background-color: rgba(4,17,5,0.5);
     margin: 10px;
 }
 
 .main > :nth-child(4) {
     grid-area: four;
-    background-color: rgba(4,17,5,0.5);
     margin: 10px;
 }
 
