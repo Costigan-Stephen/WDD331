@@ -57,11 +57,9 @@ section:before {
       background-size: contain;
   }
 
-
-
-
-// SUN
+  // SUN
   .extra6 {
+    z-index: 1;
     position: fixed;
     background-color: $sun;
     width: 4em;
@@ -73,79 +71,40 @@ section:before {
     border-radius: 50%;
     animation: ripple 0.7s linear infinite;
   }
-
-  @keyframes ripple {
-    0% {
-      box-shadow: 0 0 0 0 rgba($ripple, 0.3),
-                  0 0 0 1em rgba($ripple, 0.3),
-                  0 0 0 1.5em rgba($ripple, 0.3),
-                  0 0 0 2em rgba($ripple, 0.3);
-    }
-    100% {
-      box-shadow: 0 0 0 1em rgba($ripple, 0.3),
-                  0 0 0 1.5em rgba($ripple, 0.3),
-                  0 0 0 2em rgba($ripple, 0.3),
-                  0 0 0 2.5em rgba($ripple, 0);
-    }
-  }
 }
-
 
 /* Water Extra 3 & 4 */
 .extra3 { //FRONT WAVE
   background: url(./assets/waves-light.svg);
   position: absolute;
-  top: 630px;
+  top: 600px;
   left: -10px;
-  // left: 0px;
   z-index: 8;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100px;
+  background-size: cover;
+  height: 80px;
   width: $body-width;
   animation: lightwaves 4s infinite;
-  // overflow: hidden;
-  // overflow-x: hidden;
+  overflow: hidden;
 }
 
 .extra4 { //BACK WAVE
   background: url(./assets/waves-dark.svg);
   position: absolute;
-  top: 610px;
+  top: 580px;
   left: -10px;
   z-index: 7;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 120px;
+  background-size: cover;
+  height: 80px;
   width: $body-width;
   animation: darkwaves 3s infinite;
-  // overflow-y: hidden;
-  // overflow-x: hidden;
+  overflow: hidden;
 }
 
-@keyframes lightwaves {
-    0%,100% { transform: translate(0,0); }
-    25%     { transform: translate(0,5px);}
-    50%     { transform: translate(0, 5px); }
-    75%     { transform: translate(0,10px); }
+@media (max-width: 100px) {
+  .extra3 {top: 640px;}
+  .extra4 {top: 620px;}
 }
 
-@keyframes darkwaves {
-    0%,100% { transform: translate(0,0); }
-    30%     { transform: translate(0, -5px); }
-    60%     { transform: translate(0,10px); }
-    80%     { transform: translate(0,-5px); }
-}
-@keyframes shakeRight {
-    0%,100% { transform: rotate(0); }
-    25%     { transform: rotate(-1deg);}
-    50%     { transform: rotate(1deg);}
-    75%     { transform: rotate(-1deg);}
-}
-
-@keyframes shakeLeft {
-    0%,100% { transform: rotate(0) scaleX(-1); }
-    25%     { transform: rotate(-1deg) scaleX(-1);}
-    50%     { transform: rotate(1deg) scaleX(-1);}
-    75%     { transform: rotate(-1deg) scaleX(-1);}
-}
+@import 'animations';
