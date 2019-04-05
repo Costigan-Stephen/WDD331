@@ -26,6 +26,7 @@
 //   overflow: hidden;
 // }
 
+
 /* Can be used for the grass */
 section:before {
   z-index: 100;
@@ -75,7 +76,7 @@ section:before {
 
 /* Water Extra 3 & 4 */
 .extra3 { //FRONT WAVE
-  background: url(./assets/waves-light.svg);
+  background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 600px;
   left: -10px;
@@ -89,7 +90,7 @@ section:before {
 }
 
 .extra4 { //BACK WAVE
-  background: url(./assets/waves-dark.svg);
+  background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 580px;
   left: -10px;
