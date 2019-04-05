@@ -60,12 +60,16 @@ header{
     // background-color: $background-article;
 
 }
-/* ASIDE */
+
+section {
+  margin-left: -10px;
+}
 
 section:before {
   z-index: 14;
 }
 
+/* ASIDE */
 aside {
     z-index: 15;
     top: 13px;
