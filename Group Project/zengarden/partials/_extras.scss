@@ -14,22 +14,27 @@
   background-size: contain;
 }
 
-// //grass - WORK IN PROGRESS
-// .extra5 {
-//   z-index: 101;
-//   background-color:  $color-7;
-//   content: "can be used as grass";
-//   height: 60px;
-//   position: absolute;
-//   top: 600px;
-//   width: 110%;
-//   overflow: hidden;
-// }
+// Coast
+.extra5 {
+  z-index: 13;
+  background-image: url("./assets/coast.svg");
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 650px;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  width: $body-width;
+  // overflow: hidden;
+  background-repeat: repeat;
+  background-size: contain;
+}
 
-/* Can be used for the grass */
+/* Grass Layers */
 section:before {
   z-index: 15;
-  background-image: url("./assets/coast.svg");
+  background-image: url("./assets/grassback.svg");
   content: "";
   height: 60px;
   position: absolute;
@@ -37,13 +42,12 @@ section:before {
   padding: 0;
   margin: 0;
   width: $body-width;
-  // overflow: hidden;
   background-repeat: repeat;
   background-size: contain;
 }
 section:after {
   z-index: 15;
-  background-image: url("./assets/grass.svg");
+  background-image: url("./assets/grassfront.svg");
   content: "";
   height: 60px;
   position: absolute;
@@ -51,7 +55,6 @@ section:after {
   padding: 0;
   margin: 0;
   width: $body-width;
-  // overflow: hidden;
   background-repeat: repeat;
   background-size: contain;
 }
