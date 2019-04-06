@@ -465,7 +465,9 @@ section:after {
   header {
     margin-top: -50px;
     padding: 0 2vw;
-    text-align: center; }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
     header h2 {
       margin-bottom: 0px; }
 
@@ -486,13 +488,13 @@ section:after {
   #zen-preamble.preamble, .summary {
     z-index: 10;
     position: relative;
-    margin-left: 10px;
     padding-left: 0.5vw !important;
     padding-right: 0.5vw !important;
     text-align: center; }
 
   #zen-supporting {
-    padding-right: 30px; }
+    padding-right: 30px;
+    margin-right: 80px; }
 
   #zen-intro {
     padding-left: 45px;
@@ -507,7 +509,7 @@ section:after {
     section p {
       padding-left: 5%;
       padding-right: 5%;
-      width: 80%; }
+      width: 90%; }
     section:before {
       z-index: 14; }
     section:before, section:after {
