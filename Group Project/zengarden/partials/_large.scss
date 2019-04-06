@@ -6,6 +6,8 @@ html {
   padding-right: 0;
   // width: $body-width;
   min-height: calc(100vh - 70px);
+  width: calc(100% + calc(100vw - 100%));
+  overflow-x: hidden;
   padding-bottom: $padding-full-sides*1.4;
 
   h1,h2,h3 {
