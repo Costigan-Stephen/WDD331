@@ -320,14 +320,12 @@ section:before {
   position: absolute;
   top: 760px;
   margin-left: 0px;
-  margin-right: -50px;
   padding: 0;
   margin: 0;
   width: calc(100% + calc(100vw - 100%));
   overflow-x: hidden;
   background-repeat: repeat;
-  background-size: contain;
-  overflow-x: hidden; }
+  background-size: contain; }
 
 section:after {
   z-index: 15;
@@ -340,8 +338,7 @@ section:after {
   margin: 0;
   width: calc(100% + calc(100vw - 100%));
   background-repeat: repeat;
-  background-size: contain;
-  overflow-x: hidden; }
+  background-size: contain; }
 
 @media (min-width: 700px) {
   /* Extra #2 Plam Tree Left */
@@ -447,7 +444,6 @@ section:after {
     display: grid;
     background-color: #142816;
     color: #63a56a;
-    width: calc(100% + calc(100vw - 100%));
     overflow-x: hidden; }
 
   body {
@@ -468,11 +464,12 @@ section:after {
       margin-bottom: 0px; }
 
   .intro {
-    padding: 2vw; }
+    padding: 2vw;
+    margin-left: -40px; }
 
   .intro header, .intro .summary {
     text-align: center;
-    width: 100%; }
+    width: calc(100% + calc(100vw - 100%)); }
     .intro header h1, .intro .summary h1 {
       margin-left: -50px; }
     .intro header p:first-of-type, .intro .summary p:first-of-type {
@@ -487,17 +484,19 @@ section:after {
     padding-right: 0.5vw !important;
     text-align: center; }
 
-  #zen-supporting {
-    padding-right: 30px;
-    margin-right: 60px; }
-
   #zen-intro {
-    padding-left: 5px;
-    padding-right: 45px; }
+    margin-left: -20px;
+    width: calc(100% + calc(100vw - 100%)); }
 
   .main > div, .preamble, aside {
     margin: 2vw;
     padding: 20px 2vw 20px 2vw; }
+
+  .extra1 {
+    right: 15px; }
+
+  .extra3, .extra4 {
+    width: calc(100% + calc(100vw - 100%)); }
 
   section p {
     padding-left: 5%;
@@ -506,9 +505,8 @@ section:after {
   section:before {
     z-index: 14; }
   section:before, section:after {
-    margin-left: -40px;
-    margin-right: 40px;
-    padding-right: 40px; }
+    margin-left: -20px;
+    padding-right: 12px; }
 
   /* ASIDE */
   aside {
@@ -556,7 +554,7 @@ section:after {
     text-align: center;
     grid-area: foot;
     margin-left: -10px;
-    margin-right: -40px; } }
+    margin-right: -5px; } }
 @media (min-width: 700px) {
   html {
     background-image: url(./assets/tropical-flowers-sm.svg);
