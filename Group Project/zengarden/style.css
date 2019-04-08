@@ -307,7 +307,8 @@ aside ul {
   padding: 0;
   margin: 0;
   margin-left: -15px;
-  width: 150vw;
+  width: calc(100% + calc(100vw - 100%));
+  overflow-x: hidden;
   background-repeat: repeat;
   background-size: contain; }
 
@@ -319,9 +320,11 @@ section:before {
   position: absolute;
   top: 760px;
   margin-left: 0px;
+  margin-right: -50px;
   padding: 0;
   margin: 0;
-  width: 150vw;
+  width: calc(100% + calc(100vw - 100%));
+  overflow-x: hidden;
   background-repeat: repeat;
   background-size: contain;
   overflow-x: hidden; }
@@ -335,7 +338,7 @@ section:after {
   top: 780px;
   padding: 0;
   margin: 0;
-  width: 150vw;
+  width: calc(100% + calc(100vw - 100%));
   background-repeat: repeat;
   background-size: contain;
   overflow-x: hidden; }
@@ -369,13 +372,13 @@ section:after {
     animation: ripple 0.7s linear infinite; } }
 @media (max-width: 700px) {
   .extra5 {
-    margin-left: -15px; } }
+    margin-left: -25px; } }
 /* Water Extra 3 & 4 */
 .extra3 {
   background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 710px;
-  margin-left: -15px;
+  margin-left: -25px;
   z-index: 8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -388,21 +391,15 @@ section:after {
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 690px;
-  margin-left: -15px;
+  margin-left: -25px;
   z-index: 7;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80px;
-  width: 100vw;
+  width: 150vw;
   animation: darkwaves 3s infinite;
   overflow: hidden; }
 
-@media (max-width: 100px) {
-  .extra3 {
-    top: 640px; }
-
-  .extra4 {
-    top: 620px; } }
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 186, 68, 0.3), 0 0 0 1em rgba(255, 186, 68, 0.3), 0 0 0 1.5em rgba(255, 186, 68, 0.3), 0 0 0 2em rgba(255, 186, 68, 0.3); }
@@ -450,6 +447,7 @@ section:after {
     display: grid;
     background-color: #142816;
     color: #63a56a;
+    width: calc(100% + calc(100vw - 100%));
     overflow-x: hidden; }
 
   body {
@@ -482,7 +480,6 @@ section:after {
       margin-top: 0px;
       padding-top: 10px; }
 
-  s
   #zen-preamble.preamble, .summary {
     z-index: 10;
     position: relative;
@@ -492,26 +489,26 @@ section:after {
 
   #zen-supporting {
     padding-right: 30px;
-    margin-right: 80px; }
+    margin-right: 60px; }
 
   #zen-intro {
-    padding-left: 45px;
+    padding-left: 5px;
     padding-right: 45px; }
 
   .main > div, .preamble, aside {
     margin: 2vw;
     padding: 20px 2vw 20px 2vw; }
 
-  section {
-    margin-left: -8%; }
-    section p {
-      padding-left: 5%;
-      padding-right: 5%;
-      width: 90%; }
-    section:before {
-      z-index: 14; }
-    section:before, section:after {
-      margin-left: -40px; }
+  section p {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%; }
+  section:before {
+    z-index: 14; }
+  section:before, section:after {
+    margin-left: -40px;
+    margin-right: 40px;
+    padding-right: 40px; }
 
   /* ASIDE */
   aside {
@@ -558,7 +555,8 @@ section:after {
     padding: 2vw;
     text-align: center;
     grid-area: foot;
-    margin-left: -10px; } }
+    margin-left: -10px;
+    margin-right: -40px; } }
 @media (min-width: 700px) {
   html {
     background-image: url(./assets/tropical-flowers-sm.svg);

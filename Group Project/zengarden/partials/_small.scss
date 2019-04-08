@@ -3,6 +3,7 @@ html{
     display: grid;
     background-color: $color-7;
     color: $color-8;
+    width: $body-width-true;
     overflow-x: hidden;
 }
 
@@ -45,11 +46,9 @@ header{
     }
 }
 
-s
 #zen-preamble.preamble, .summary {
     z-index: 10;
     position: relative;
-    // margin-left: 10px;
     padding-left: $padding-full !important;
     padding-right: $padding-full !important;
     text-align: center;
@@ -57,11 +56,11 @@ s
 
 #zen-supporting{
   padding-right: 30px;
-  margin-right: 80px;
+  margin-right: 60px;
 }
 
 #zen-intro {
-  padding-left: 45px;
+  padding-left: 5px;
   padding-right: 45px;
 }
 
@@ -72,17 +71,18 @@ s
 }
 
 section {
-  margin-left: -8%;
   p {
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
   }
   &:before {
     z-index: 14;
   }
   &:before, &:after {
     margin-left: -40px;
+    margin-right: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -145,4 +145,5 @@ footer{
     text-align: center;
     grid-area: foot;
     margin-left: -10px;
+    margin-right: -40px;
 }

@@ -31,7 +31,8 @@
   padding: 0;
   margin: 0;
   margin-left: -15px;
-  width: $body-width*1.5;
+  width: $body-width-true;
+  overflow-x: hidden;
   background-repeat: repeat;
   background-size: contain;
 }
@@ -44,9 +45,11 @@ section:before {
   position: absolute;
   top: 760px;
   margin-left: 0px;
+  margin-right: -50px;
   padding: 0;
   margin: 0;
-  width: $body-width*1.5;
+  width: $body-width-true;
+  overflow-x: hidden;
   background-repeat: repeat;
   background-size: contain;
   overflow-x: hidden
@@ -60,7 +63,7 @@ section:after {
   top: 780px;
   padding: 0;
   margin: 0;
-  width: $body-width*1.5;
+  width: $body-width-true;
   background-repeat: repeat;
   background-size: contain;
   overflow-x: hidden
@@ -102,7 +105,7 @@ section:after {
 @media (max-width: 700px) {
   // Coast
   .extra5 {
-    margin-left: -15px;
+    margin-left: -25px;
   }
 }
 
@@ -111,7 +114,7 @@ section:after {
   background: url(./assets/wave-light-1.svg);
   position: absolute;
   top: 710px;
-  margin-left: -15px;
+  margin-left: -25px;
   z-index: 8;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,19 +129,14 @@ section:after {
   background: url(./assets/wave-dark-1.svg);
   position: absolute;
   top: 690px;
-  margin-left: -15px;
+  margin-left: -25px;
   z-index: 7;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80px;
-  width: $body-width;
+  width: $body-width*1.5;
   animation: darkwaves 3s infinite;
   overflow: hidden;
-}
-
-@media (max-width: 100px) {
-  .extra3 {top: 640px;}
-  .extra4 {top: 620px;}
 }
 
 @import 'animations';
